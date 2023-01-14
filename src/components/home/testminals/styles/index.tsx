@@ -1,3 +1,3 @@
-import HomeTestMinalsWrap from './wrap';
+import HomeTestMinalsWrap from "./wrap";
 
 export { HomeTestMinalsWrap };

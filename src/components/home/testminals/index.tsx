@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect } from "react";
 import {
     Avatar,
     Card,
@@ -7,16 +7,16 @@ import {
     IconButton,
     Rating,
     Stack,
-} from '@mui/material';
-import { ChevronLeft, ChevronRight } from '@mui/icons-material';
-import Slider from 'react-slick';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+} from "@mui/material";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import Slider from "react-slick";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import { H2, H4 } from 'components/shared/heading';
-import { P1, P2, P3 } from 'components/shared/paragraph';
-import { ActionButton } from 'components/shared/button';
-import { HomeTestMinalsWrap } from './styles';
+import { H2, H4 } from "components/shared/heading";
+import { P1, P2, P3 } from "components/shared/paragraph";
+import { ActionButton } from "components/shared/button";
+import { HomeTestMinalsWrap } from "./styles";
 
 interface Props {
     className?: string;
@@ -24,8 +24,10 @@ interface Props {
     onClick?: () => void;
 }
 
-const PrevButton = (props: Props) => {
-    useEffect(() => {
+const PrevButton = (props: Props) => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
 
@@ -41,7 +43,8 @@ const PrevButton = (props: Props) => {
     );
 };
 
-const NextButton = (props: Props) => {
+const NextButton = (props: Props) => 
+{
     return (
         <IconButton
             color="secondary"
@@ -54,8 +57,10 @@ const NextButton = (props: Props) => {
     );
 };
 
-const HomeTestMinals: FC = () => {
-    useEffect(() => {
+const HomeTestMinals: FC = () => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
 
@@ -313,29 +318,30 @@ const HomeTestMinals: FC = () => {
     );
 };
 
-const animate = () => {
+const animate = () => 
+{
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-testminal',
-            start: 'top center',
+            trigger: "#home-testminal",
+            start: "top center",
         },
     });
 
     tl.fromTo(
-        '#home-testminal',
+        "#home-testminal",
         {
-            width: '0',
+            width: "0",
         },
         {
-            width: '100%',
+            width: "100%",
             duration: 1.1
         }
     )
 
     tl.fromTo(
-        '#home-testminal-title',
+        "#home-testminal-title",
         {
             opacity: 0,
             x: -50,
@@ -345,7 +351,7 @@ const animate = () => {
             x: 0,
         }
     ).fromTo(
-        '#home-testminal-subtitle',
+        "#home-testminal-subtitle",
         {
             opacity: 0,
             x: 20,
@@ -357,7 +363,7 @@ const animate = () => {
     );
 
     tl.fromTo(
-        '#home-testminal-slider',
+        "#home-testminal-slider",
         {
             opacity: 0,
             scale: 0,
@@ -370,7 +376,7 @@ const animate = () => {
     );
 
     tl.fromTo(
-        '#home-testminal-btn1',
+        "#home-testminal-btn1",
         {
             opacity: 0,
             scale: 0,
@@ -382,7 +388,7 @@ const animate = () => {
     );
 
     tl.fromTo(
-        '#home-testminal-btn2',
+        "#home-testminal-btn2",
         {
             opacity: 0,
             scale: 0,

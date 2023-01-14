@@ -1,10 +1,11 @@
-import { NextPage } from 'next';
-import Head from 'next/head';
+import { NextPage } from "next";
+import Head from "next/head";
 
-import LandingLayout from 'layouts/landing';
+import LandingLayout from "layouts/landing";
 import ConversationForm from "components/conversation/form";
 
-const Conversation: NextPage = () => {
+const Conversation: NextPage = () => 
+{
     return (
         <LandingLayout>
             <Head>

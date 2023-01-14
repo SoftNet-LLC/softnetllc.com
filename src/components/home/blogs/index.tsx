@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect } from "react";
 import {
     Button,
     ButtonBase,
@@ -9,17 +9,19 @@ import {
     Container,
     Grid,
     Stack,
-} from '@mui/material';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+} from "@mui/material";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import { H4 } from 'components/shared/heading';
-import { P2 } from 'components/shared/paragraph';
-import { ActionButton } from 'components/shared/button';
-import { HomeBlogsWrap } from './styles';
+import { H4 } from "components/shared/heading";
+import { P2 } from "components/shared/paragraph";
+import { ActionButton } from "components/shared/button";
+import { HomeBlogsWrap } from "./styles";
 
-const HomeBlogs: FC = () => {
-    useEffect(() => {
+const HomeBlogs: FC = () => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
     
@@ -31,7 +33,7 @@ const HomeBlogs: FC = () => {
                         <Grid item lg={4} xs={12}>
                             <Card id='home-blog-item1'>
                                 <ButtonBase
-                                    sx={{ display: 'block', width: '100%' }}
+                                    sx={{ display: "block", width: "100%" }}
                                 >
                                     <CardMedia
                                         component="img"
@@ -64,7 +66,7 @@ const HomeBlogs: FC = () => {
                         <Grid item lg={4} xs={12}>
                             <Card id='home-blog-item2'>
                                 <ButtonBase
-                                    sx={{ display: 'block', width: '100%' }}
+                                    sx={{ display: "block", width: "100%" }}
                                 >
                                     <CardMedia
                                         component="img"
@@ -97,7 +99,7 @@ const HomeBlogs: FC = () => {
                         <Grid item lg={4} xs={12}>
                             <Card id='home-blog-item3'>
                                 <ButtonBase
-                                    sx={{ display: 'block', width: '100%' }}
+                                    sx={{ display: "block", width: "100%" }}
                                 >
                                     <CardMedia
                                         component="img"
@@ -138,17 +140,18 @@ const HomeBlogs: FC = () => {
     );
 };
 
-const animate = () => {
+const animate = () => 
+{
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-blog',
-            start: 'top center',
+            trigger: "#home-blog",
+            start: "top center",
         },
     })
         .fromTo(
-            '#home-blog-item1',
+            "#home-blog-item1",
             {
                 opacity: 0,
                 y: -100,
@@ -165,12 +168,12 @@ const animate = () => {
     
     gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-blog',
-            start: 'top center',
+            trigger: "#home-blog",
+            start: "top center",
         },
     })
         .fromTo(
-            '#home-blog-item2',
+            "#home-blog-item2",
             {
                 opacity: 0,
                 y: 100,
@@ -187,12 +190,12 @@ const animate = () => {
     
     gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-blog',
-            start: 'top center',
+            trigger: "#home-blog",
+            start: "top center",
         },
     })
         .fromTo(
-            '#home-blog-item3',
+            "#home-blog-item3",
             {
                 opacity: 0,
                 y: 100,
@@ -207,7 +210,7 @@ const animate = () => {
             }
         )
         .fromTo(
-            '#home-blog-button',
+            "#home-blog-button",
             {
                 opacity: 0,
                 scale: 0,

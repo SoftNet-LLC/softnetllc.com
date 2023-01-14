@@ -1,15 +1,17 @@
-import React, { FC, useEffect } from 'react';
-import {Container, Grid } from '@mui/material';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import React, { FC, useEffect } from "react";
+import { Container, Grid } from "@mui/material";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import { H2 } from 'components/shared/heading';
-import { P1 } from 'components/shared/paragraph';
-import { HomeExpertiseWrap } from './styles';
-import { ActionButton } from 'components/shared/button';
+import { H2 } from "components/shared/heading";
+import { P1 } from "components/shared/paragraph";
+import { HomeExpertiseWrap } from "./styles";
+import { ActionButton } from "components/shared/button";
 
-const HomeExpertise: FC = () => {
-    useEffect(() => {
+const HomeExpertise: FC = () => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
 
@@ -24,7 +26,7 @@ const HomeExpertise: FC = () => {
                     <Grid item lg={4} xs={12}>
                         <P1 id="home-expertise-content1">
                             We design, develop and maintain high-performance web
-                            and mobile applications that can address{' '}
+                            and mobile applications that can address{" "}
                             <b> complex business and technical issues</b>. We
                             set up cloud architectures that can scale to several
                             hundred thousand users.
@@ -43,7 +45,7 @@ const HomeExpertise: FC = () => {
                         item
                         xs={12}
                         sx={{
-                            textAlign: 'center',
+                            textAlign: "center",
                         }}
                     >
                         <ActionButton
@@ -60,17 +62,18 @@ const HomeExpertise: FC = () => {
     );
 };
 
-const animate = () => {
+const animate = () => 
+{
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-expertise',
-            start: 'top center',
+            trigger: "#home-expertise",
+            start: "top center",
         },
     })
         .fromTo(
-            '#home-expertise-title',
+            "#home-expertise-title",
             {
                 opacity: 0,
                 y: 10,
@@ -82,7 +85,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-expertise-content1',
+            "#home-expertise-content1",
             {
                 opacity: 0,
                 x: 20,
@@ -94,7 +97,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-expertise-content2',
+            "#home-expertise-content2",
             {
                 opacity: 0,
                 x: -20,
@@ -106,7 +109,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-expertise-button',
+            "#home-expertise-button",
             {
                 opacity: 0,
                 scale: 0,

@@ -1,15 +1,17 @@
-import React, { FC, useEffect } from 'react';
-import { Grid } from '@mui/material';
-import { Container } from '@mui/system';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import React, { FC, useEffect } from "react";
+import { Grid } from "@mui/material";
+import { Container } from "@mui/system";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import { H2 } from 'components/shared/heading';
-import { P1 } from 'components/shared/paragraph';
-import { HomeChallengeWrap } from './styles';
+import { H2 } from "components/shared/heading";
+import { P1 } from "components/shared/paragraph";
+import { HomeChallengeWrap } from "./styles";
 
-const HomeChallenge: FC = () => {
-    useEffect(() => {
+const HomeChallenge: FC = () => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
 
@@ -40,9 +42,9 @@ const HomeChallenge: FC = () => {
 
                     <Grid item lg={5} xs={12}>
                         <P1 id='home-challenge-content2'>
-                            We are used to working on projects with{' '}
+                            We are used to working on projects with{" "}
                             <b> high technical </b> and
-                            <b> commercial stakes</b>. Whether for{' '}
+                            <b> commercial stakes</b>. Whether for{" "}
                             <b> start-ups </b> or <b> large groups</b>, we know
                             how to adapt our methods and are ready to meet any
                             challenge.
@@ -54,17 +56,18 @@ const HomeChallenge: FC = () => {
     );
 };
 
-const animate = () => {
+const animate = () => 
+{
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-challenge',
-            start: 'top center',
+            trigger: "#home-challenge",
+            start: "top center",
         },
     })
         .fromTo(
-            '#home-challenge-title',
+            "#home-challenge-title",
             {
                 opacity: 0,
                 y: 10,
@@ -76,7 +79,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-challenge-content1',
+            "#home-challenge-content1",
             {
                 opacity: 0,
                 x: 20,
@@ -88,7 +91,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-challenge-content2',
+            "#home-challenge-content2",
             {
                 opacity: 0,
                 x: -20,

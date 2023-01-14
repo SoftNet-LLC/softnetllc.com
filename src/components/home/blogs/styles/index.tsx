@@ -1,3 +1,3 @@
-import HomeBlogsWrap from './wrap';
+import HomeBlogsWrap from "./wrap";
 
 export { HomeBlogsWrap };

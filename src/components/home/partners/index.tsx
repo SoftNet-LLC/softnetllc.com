@@ -1,13 +1,15 @@
-import React, { FC, useEffect } from 'react';
-import Image from 'next/image';
-import { Container, Stack } from '@mui/material';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import React, { FC, useEffect } from "react";
+import Image from "next/image";
+import { Container, Stack } from "@mui/material";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import { HomePartnersWrap } from './styles';
+import { HomePartnersWrap } from "./styles";
 
-const HomePartners: FC = () => {
-    useEffect(() => {
+const HomePartners: FC = () => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
 
@@ -38,41 +40,42 @@ const HomePartners: FC = () => {
 
 const data = [
     {
-        alt: 'Amazon',
-        image: '/images/amazon.png',
+        alt: "Amazon",
+        image: "/images/amazon.png",
     },
     {
-        alt: 'Shopify',
-        image: '/images/shopify.png',
+        alt: "Shopify",
+        image: "/images/shopify.png",
     },
     {
-        alt: 'Naipo',
-        image: '/images/naipo.png',
+        alt: "Naipo",
+        image: "/images/naipo.png",
     },
     {
-        alt: 'Taobao',
-        image: '/images/taobao.png',
+        alt: "Taobao",
+        image: "/images/taobao.png",
     },
     {
-        alt: 'Clarins',
-        image: '/images/clarins.png',
+        alt: "Clarins",
+        image: "/images/clarins.png",
     },
     {
-        alt: 'Bisman Online',
-        image: '/images/bisman.png',
+        alt: "Bisman Online",
+        image: "/images/bisman.png",
     },
 ];
 
-const animate = () => {
+const animate = () => 
+{
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-partners',
-            start: 'bottom bottom',
+            trigger: "#home-partners",
+            start: "bottom bottom",
         },
     }).fromTo(
-        '.home-partners-item',
+        ".home-partners-item",
         {
             opacity: 0,
             y: 50,

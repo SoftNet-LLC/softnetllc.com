@@ -1,3 +1,3 @@
-import HomePartnersWrap from './wrap';
+import HomePartnersWrap from "./wrap";
 
 export { HomePartnersWrap };
