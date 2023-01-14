@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const HomeTestMinalsWrap = styled.section`
     padding: 90px 0;

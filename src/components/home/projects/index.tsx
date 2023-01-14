@@ -1,17 +1,19 @@
-import React, { FC, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { ButtonBase, Container, Stack } from '@mui/material';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import React, { FC, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ButtonBase, Container, Stack } from "@mui/material";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import { H2 } from 'components/shared/heading';
-import { P1 } from 'components/shared/paragraph';
-import { ActionButton } from 'components/shared/button';
-import { HomeProjectWrap, ImageWrap } from './styles';
+import { H2 } from "components/shared/heading";
+import { P1 } from "components/shared/paragraph";
+import { ActionButton } from "components/shared/button";
+import { HomeProjectWrap, ImageWrap } from "./styles";
 
-const HomeProjects: FC = () => {
-    useEffect(() => {
+const HomeProjects: FC = () => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
 
@@ -56,7 +58,7 @@ const HomeProjects: FC = () => {
 
                     <Stack justifyContent="center" alignItems="center">
                         <ActionButton
-                            id={`home-project-button`}
+                            id={"home-project-button"}
                             variant="outlined"
                             color="secondary"
                         >
@@ -71,78 +73,79 @@ const HomeProjects: FC = () => {
 
 const data = [
     {
-        key: 'Bao Society',
-        image: '/images/project1.png',
-        link: 'https://baosociety.com/',
+        key: "Bao Society",
+        image: "/images/project1.png",
+        link: "https://baosociety.com/",
     },
     {
-        key: 'Metagolden',
-        image: '/images/project2.png',
-        link: 'https://metagolden.io/',
+        key: "Metagolden",
+        image: "/images/project2.png",
+        link: "https://metagolden.io/",
     },
     {
-        key: 'Pop In The City',
-        image: '/images/project3.png',
-        link: 'https://popinthecity.nyc/',
+        key: "Pop In The City",
+        image: "/images/project3.png",
+        link: "https://popinthecity.nyc/",
     },
     {
-        key: 'Camille Mormal',
-        image: '/images/project4.png',
-        link: 'https://camillemormal.com/',
+        key: "Camille Mormal",
+        image: "/images/project4.png",
+        link: "https://camillemormal.com/",
     },
     {
-        key: 'Forner',
-        image: '/images/project5.png',
-        link: 'https://forner.studio/',
+        key: "Forner",
+        image: "/images/project5.png",
+        link: "https://forner.studio/",
     },
     {
-        key: 'GOALS',
-        image: '/images/project6.png',
-        link: 'https://goals.co/',
+        key: "GOALS",
+        image: "/images/project6.png",
+        link: "https://goals.co/",
     },
     {
-        key: 'Camille Mormal',
-        image: '/images/project4.png',
-        link: 'https://camillemormal.com/',
+        key: "Camille Mormal",
+        image: "/images/project4.png",
+        link: "https://camillemormal.com/",
     },
     {
-        key: 'Forner',
-        image: '/images/project5.png',
-        link: 'https://forner.studio/',
+        key: "Forner",
+        image: "/images/project5.png",
+        link: "https://forner.studio/",
     },
     {
-        key: 'Bao Society',
-        image: '/images/project1.png',
-        link: 'https://baosociety.com/',
+        key: "Bao Society",
+        image: "/images/project1.png",
+        link: "https://baosociety.com/",
     },
     {
-        key: 'Metagolden',
-        image: '/images/project2.png',
-        link: 'https://metagolden.io/',
+        key: "Metagolden",
+        image: "/images/project2.png",
+        link: "https://metagolden.io/",
     },
     {
-        key: 'GOALS',
-        image: '/images/project6.png',
-        link: 'https://goals.co/',
+        key: "GOALS",
+        image: "/images/project6.png",
+        link: "https://goals.co/",
     },
     {
-        key: 'Pop In The City',
-        image: '/images/project3.png',
-        link: 'https://popinthecity.nyc/',
+        key: "Pop In The City",
+        image: "/images/project3.png",
+        link: "https://popinthecity.nyc/",
     },
 ];
 
-const animate = () => {
+const animate = () => 
+{
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-project',
-            start: 'top center',
+            trigger: "#home-project",
+            start: "top center",
         },
     });
     tl.fromTo(
-        '#home-project-title',
+        "#home-project-title",
         {
             opacity: 0,
             x: -50,
@@ -152,7 +155,7 @@ const animate = () => {
             x: 0,
         }
     ).fromTo(
-        '#home-project-subtitle',
+        "#home-project-subtitle",
         {
             opacity: 0,
             x: 20,
@@ -163,7 +166,8 @@ const animate = () => {
         }
     );
 
-    data.map((d, i) => {
+    data.map((d, i) => 
+    {
         tl.fromTo(
             `#home-project-item${i}`,
             {
@@ -179,7 +183,7 @@ const animate = () => {
     });
 
     tl.fromTo(
-        '#home-project-button',
+        "#home-project-button",
         {
             opacity: 0,
             scale: 0,

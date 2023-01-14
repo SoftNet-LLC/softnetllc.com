@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 interface Props {
     color?: string;
@@ -6,7 +6,7 @@ interface Props {
 
 const H2 = styled.h2<Props>`
     font-size: 42px;
-    color: ${({ color }) => (color === 'light' ? '#ffffff' : '#000000')};
+    color: ${({ color }) => (color === "light" ? "#ffffff" : "#000000")};
 
     span {
         color: #f20091;

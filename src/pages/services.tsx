@@ -1,9 +1,10 @@
-import { NextPage } from 'next';
-import Head from 'next/head';
+import { NextPage } from "next";
+import Head from "next/head";
 
-import LandingLayout from 'layouts/landing';
+import LandingLayout from "layouts/landing";
 
-const Services: NextPage = () => {
+const Services: NextPage = () => 
+{
     return (
         <LandingLayout>
             <Head>

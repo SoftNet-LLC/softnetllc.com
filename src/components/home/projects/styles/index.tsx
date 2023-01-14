@@ -1,4 +1,4 @@
-import ImageWrap from './image-wrap';
-import HomeProjectWrap from './wrap';
+import ImageWrap from "./image-wrap";
+import HomeProjectWrap from "./wrap";
 
 export { HomeProjectWrap, ImageWrap };

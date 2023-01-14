@@ -1,12 +1,13 @@
-import { Container, Stack } from '@mui/system';
-import Image from 'next/image';
+import { Container, Stack } from "@mui/system";
+import Image from "next/image";
 
-import { ActionButton } from 'components/shared/button';
-import { H1 } from 'components/shared/heading';
-import { FC } from 'react';
-import { HomeActionWrap } from './styles';
+import { ActionButton } from "components/shared/button";
+import { H1 } from "components/shared/heading";
+import { FC } from "react";
+import { HomeActionWrap } from "./styles";
 
-const HomeAction: FC = () => {
+const HomeAction: FC = () => 
+{
     return (
         <HomeActionWrap>
             <Container>

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const HomeChallengeWrap = styled.section`
     padding: 130px 0 65px;

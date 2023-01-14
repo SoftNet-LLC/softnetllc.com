@@ -1,32 +1,34 @@
-import {FC} from "react";
-import {useRouter} from "next/router";
-import {Card, CardContent, Container, Grid, Stack} from "@mui/material";
-import * as Yup from 'yup';
-import {Form, FormikProvider, useFormik} from 'formik';
+import { FC } from "react";
+import { useRouter } from "next/router";
+import { Card, CardContent, Container, Grid, Stack } from "@mui/material";
+import * as Yup from "yup";
+import { Form, FormikProvider, useFormik } from "formik";
 
-import {ConversationFormWrap, FormInput, SubmitButton} from "./styles";
+import { ConversationFormWrap, FormInput, SubmitButton } from "./styles";
 
 
-const ConversationForm: FC = () => {
+const ConversationForm: FC = () => 
+{
     const router = useRouter();
 
     const ConversationSchema = Yup.object().shape(
         {
-            firstname: Yup.string().required('First Name is required'),
-            lastname: Yup.string().required('Last Name is required'),
-            email: Yup.string().required('Email is required')
+            firstname: Yup.string().required("First Name is required"),
+            lastname: Yup.string().required("Last Name is required"),
+            email: Yup.string().required("Email is required")
         }
     )
 
     const formik = useFormik(
         {
             initialValues: {
-                firstname: '',
-                lastname: '',
-                email: '',
+                firstname: "",
+                lastname: "",
+                email: "",
             },
             validationSchema: ConversationSchema,
-            onSubmit: () => {
+            onSubmit: () => 
+            {
 
             }
         }
@@ -77,7 +79,7 @@ const ConversationForm: FC = () => {
                                                     touched.firstname &&
                                                     errors.firstname?.toString()
                                                 }
-                                                {...getFieldProps('firstname')}
+                                                {...getFieldProps("firstname")}
                                             />
                                             <FormInput
                                                 fullWidth
@@ -91,7 +93,7 @@ const ConversationForm: FC = () => {
                                                     touched.lastname &&
                                                     errors.lastname?.toString()
                                                 }
-                                                {...getFieldProps('lastname')}
+                                                {...getFieldProps("lastname")}
                                             />
                                             <FormInput
                                                 fullWidth
@@ -105,7 +107,7 @@ const ConversationForm: FC = () => {
                                                     touched.email &&
                                                     errors.email?.toString()
                                                 }
-                                                {...getFieldProps('email')}
+                                                {...getFieldProps("email")}
                                             />
                                             <SubmitButton
                                                 fullWidth

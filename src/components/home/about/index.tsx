@@ -1,13 +1,15 @@
-import { FC, useEffect } from 'react';
-import Image from 'next/image';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { FC, useEffect } from "react";
+import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
-import { HomeAboutWrap } from './styles';
-import { Container } from '@mui/material';
+import { HomeAboutWrap } from "./styles";
+import { Container } from "@mui/material";
 
-const HomeAbout: FC = () => {
-    useEffect(() => {
+const HomeAbout: FC = () => 
+{
+    useEffect(() => 
+    {
         animate();
     }, []);
 
@@ -58,17 +60,18 @@ const HomeAbout: FC = () => {
     );
 };
 
-const animate = () => {
+const animate = () => 
+{
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
         scrollTrigger: {
-            trigger: '#home-about',
-            start: 'top center',
+            trigger: "#home-about",
+            start: "top center",
         },
     })
         .fromTo(
-            '#home-about-pc1',
+            "#home-about-pc1",
             {
                 opacity: 0,
                 scale: 1.3,
@@ -80,7 +83,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-about-pc2',
+            "#home-about-pc2",
             {
                 opacity: 0,
                 scale: 1.3,
@@ -92,7 +95,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-about-pc3',
+            "#home-about-pc3",
             {
                 opacity: 0,
                 scale: 1.3,
@@ -104,7 +107,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-about-pc4',
+            "#home-about-pc4",
             {
                 opacity: 0,
                 scale: 1.3,
@@ -116,7 +119,7 @@ const animate = () => {
         )
 
         .fromTo(
-            '#home-about-title',
+            "#home-about-title",
             {
                 opacity: 0,
                 rotateY: 90,

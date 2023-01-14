@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const HomeAboutWrap = styled.div`
     padding: 130px 0 65px;

@@ -1,3 +1,3 @@
-import LandingNavWrap from './wrap';
+import LandingNavWrap from "./wrap";
 
 export { LandingNavWrap };

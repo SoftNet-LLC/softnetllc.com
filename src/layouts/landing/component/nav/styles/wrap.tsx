@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const LandingNavWrap = styled.div`
     background-color: #0f0f0f;

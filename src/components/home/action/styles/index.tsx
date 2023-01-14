@@ -1,3 +1,3 @@
-import HomeActionWrap from './wrap';
+import HomeActionWrap from "./wrap";
 
 export { HomeActionWrap };

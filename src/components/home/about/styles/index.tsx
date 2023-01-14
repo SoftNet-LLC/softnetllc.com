@@ -1,3 +1,3 @@
-import HomeAboutWrap from './wrap';
+import HomeAboutWrap from "./wrap";
 
 export { HomeAboutWrap };

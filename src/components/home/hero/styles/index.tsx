@@ -1,3 +1,3 @@
-import HomeHeroWrap from './wrap';
+import HomeHeroWrap from "./wrap";
 
 export { HomeHeroWrap };
