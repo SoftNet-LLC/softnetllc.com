@@ -1,30 +1,26 @@
 import React, { FC, Fragment } from "react";
-import { LandingFooter, LandingHeader } from "./component";
-import NavBar from "./component/nav";
-import useBreakpoints, { BreakpointType } from "utils/hooks/breakpoints.hooks";
+import { LayoutType } from "@utils/types/layout.type";
+import SeoHead from "@components/shared/seo/head";
+import LandingHeader from "./components/header";
+import NavBar from "@layouts/landing/components/nav";
+import useBreakpoints from "@utils/hooks/breakpoints.hooks";
+import { BreakpointType } from "@utils/types/breakpoint.type";
+import LandingFooter from "@layouts/landing/components/footer";
 
-interface Props {
-    children?: any;
-}
 
-const LandingLayout: FC<Props> = (props) =>
-{
-    const { children } = props;
-
+const LandingLayout: FC<LayoutType> = (props) => {
+    const { children, seo } = props
     const bkp: BreakpointType = useBreakpoints();
-
 
     return (
         <Fragment>
-            <LandingHeader />
-
-            {
-                bkp !== "mob" && <NavBar />
-            }
-
-            {children}
-
-            <LandingFooter />
+            <SeoHead {...seo}/>
+            {bkp !== "mob" && <NavBar/>}
+            <LandingHeader/>
+            <main style={{ minHeight: "100vh" }}>
+                {children}
+            </main>
+            <LandingFooter/>
         </Fragment>
     );
 };

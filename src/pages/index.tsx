@@ -1,47 +1,33 @@
+import React from "react";
 import { NextPage } from "next";
-import Head from "next/head";
+import LandingLayout from "@layouts/landing";
+import { SeoProps } from "@utils/types/layout.type";
+import HomeHero from "@components/home/hero";
 
-import LandingLayout from "layouts/landing";
-import {
-    HomeAbout,
-    HomeAction,
-    HomeBlogs,
-    HomeChallenge,
-    HomeExpertise,
-    HomeHero,
-    HomePartners,
-    HomeProjects,
-    HomeTestMinals,
-} from "components/home";
+const pageSeo: SeoProps = {
+    title: "SoftNet.LLC - Home",
+    description: "Web & Mobile app development service in United State.",
+    image: {
+        url: "/softnetllc.jpg",
+        width: 1000,
+        height: 510
+    },
+    keywords: [
+        "SoftNet",
+        "LLC",
+        "Web Development",
+        "Website Development",
+        "US web service"
+    ],
+    url: "https://softnetllc.com"
+}
 
-
-const Home: NextPage = () =>
-{
+const HomePage: NextPage = () => {
     return (
-        <LandingLayout>
-            <Head>
-                <title>Home | SoftNet.LLC</title>
-            </Head>
-
-            <HomeHero />
-
-            <HomePartners />
-
-            {/*<HomeAbout />*/}
-
-            {/*<HomeExpertise />*/}
-
-            {/*<HomeProjects />*/}
-
-            {/*<HomeTestMinals />*/}
-
-            {/*<HomeChallenge />*/}
-
-            {/*<HomeBlogs />*/}
-
-            {/*<HomeAction />*/}
+        <LandingLayout seo={pageSeo}>
+            <HomeHero/>
         </LandingLayout>
     );
 };
 
-export default Home;
+export default HomePage;
