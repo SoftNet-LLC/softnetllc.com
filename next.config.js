@@ -8,11 +8,14 @@ const withPWA = require("next-pwa")({
     buildExcludes: [/middleware-manifest.json$/]
 });
 
-const nextConfig = {
+const nextConfig = withPWA({
     reactStrictMode: true,
     swcMinify: true,
+    experimental: {
+        runtime: "edge",
+    },
     env: {
     }
-};
+});
 
 module.exports = nextConfig

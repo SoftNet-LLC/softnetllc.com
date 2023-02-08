@@ -5,7 +5,7 @@ import { SeoProps } from "@utils/types/layout.type";
 import HomeHero from "@components/home/hero";
 
 const pageSeo: SeoProps = {
-    title: "SoftNet.LLC - Home",
+    title: "Home - SoftNet.LLC",
     description: "Web & Mobile app development service in United State.",
     image: {
         url: "/softnetllc.jpg",

@@ -7,11 +7,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FooterWrap from "./style/wrap";
 import LogoLink from "./style/logo";
-import { LogoLightImage } from "@assets/images/images";
 import { BreakpointType } from "@utils/types/breakpoint.type";
 import useBreakpoints from "@utils/hooks/breakpoints.hooks";
 import { H2 } from "@components/shared/heading";
 import { P2 } from "@components/shared/paragraph";
+import { LOGO_LIGHT } from "@assets/images";
 
 const LandingFooter: FC = () => {
     const bkp: BreakpointType = useBreakpoints();
@@ -34,7 +34,7 @@ const LandingFooter: FC = () => {
                                     spacing={2}>
                                     <LogoLink href="/">
                                         <Image
-                                            src={LogoLightImage}
+                                            src={LOGO_LIGHT}
                                             width="51"
                                             height="38"
                                             alt="SoftNet.LLC Logo"
@@ -174,7 +174,7 @@ const LandingFooter: FC = () => {
                             spacing={2}>
                             <LogoLink href="/">
                                 <Image
-                                    src={LogoLightImage}
+                                    src={LOGO_LIGHT}
                                     width="51"
                                     height="38"
                                     alt="SoftNet.LLC Logo"
