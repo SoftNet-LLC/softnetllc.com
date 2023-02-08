@@ -11,11 +11,6 @@ const withPWA = require("next-pwa")({
 const nextConfig = withPWA({
     reactStrictMode: false,
     swcMinify: true,
-    assetPrefix: process.env.VERCEL_URL,
-    images: {
-        domains: [process.env.VERCEL_URL],
-        path: `${process.env.VERCEL_URL}/_next/image`,
-    },
     env: {
     }
 });
