@@ -19,8 +19,8 @@ import { HeaderWrap } from "./style";
 import { menus } from "../menu";
 import useBreakpoints from "@utils/hooks/breakpoints.hooks";
 import { BreakpointType } from "@utils/types/breakpoint.type";
-import { LogoImage } from "@assets/images/images";
 import LogoLink from "./style/logo";
+import { LOGO } from "@assets/images";
 
 
 const LandingHeader: FC = () => {
@@ -41,7 +41,7 @@ const LandingHeader: FC = () => {
                         alignItems="center">
                         <LogoLink href="/">
                             <Image
-                                src={LogoImage}
+                                src={LOGO}
                                 width="51"
                                 height="38"
                                 alt="SoftNet.LLC Logo"
