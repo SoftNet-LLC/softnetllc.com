@@ -9,6 +9,8 @@ const HomeAbout = dynamic(() => import("@components/home/about"), { ssr: false }
 const HomeExpertise = dynamic(() => import("@components/home/expertise"), { ssr: false });
 const HomeProjects = dynamic(() => import("@components/home/projects"), { ssr: false });
 const HomeChallenge = dynamic(() => import("@components/home/challenge"), { ssr: false });
+const HomeBlogs = dynamic(() => import("@components/home/blogs"), { ssr: false });
+const HomeAction = dynamic(() => import("@components/home/action"), { ssr: false });
 
 const pageSeo: SeoProps = {
     title: "Home - SoftNet.LLC",
@@ -43,6 +45,8 @@ const HomePage: NextPage = () => {
             <HomeExpertise/>
             <HomeProjects/>
             <HomeChallenge/>
+            <HomeBlogs/>
+            <HomeAction/>
         </LandingLayout>
     );
 };

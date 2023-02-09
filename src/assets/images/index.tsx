@@ -12,6 +12,12 @@ import HOME_ABOUT1 from "./home-about1.webp"
 import HOME_ABOUT2 from "./home-about2.webp"
 import HOME_ABOUT3 from "./home-about3.webp"
 import HOME_ABOUT4 from "./home-about4.webp"
+import ILLUS1 from "./illus1.svg"
+import ILLUS2 from "./illus2.svg"
+import ILLUS3 from "./illus3.svg"
+import ILLUS4 from "./illus4.svg"
+import ILLUS5 from "./illus5.svg"
+import ILLUS6 from "./illus6.svg"
 
 
 export {
@@ -29,4 +35,10 @@ export {
     HOME_ABOUT2,
     HOME_ABOUT3,
     HOME_ABOUT4,
+    ILLUS1,
+    ILLUS2,
+    ILLUS3,
+    ILLUS4,
+    ILLUS5,
+    ILLUS6,
 }
