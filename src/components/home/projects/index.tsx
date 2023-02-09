@@ -105,36 +105,6 @@ const projects = [
         image: "/temp/project6.png",
         link: "https://goals.co/",
     },
-    {
-        key: "Camille Mormal",
-        image: "/temp/project4.png",
-        link: "https://camillemormal.com/",
-    },
-    {
-        key: "Forner",
-        image: "/temp/project5.png",
-        link: "https://forner.studio/",
-    },
-    {
-        key: "Bao Society",
-        image: "/temp/project1.png",
-        link: "https://baosociety.com/",
-    },
-    {
-        key: "Metagolden",
-        image: "/temp/project2.png",
-        link: "https://metagolden.io/",
-    },
-    {
-        key: "GOALS",
-        image: "/temp/project6.png",
-        link: "https://goals.co/",
-    },
-    {
-        key: "Pop In The City",
-        image: "/temp/project3.png",
-        link: "https://popinthecity.nyc/",
-    },
 ];
 
 const animate = () => {
