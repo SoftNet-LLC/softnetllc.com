@@ -3,8 +3,8 @@
  */
 
 const { withPlugins, extend } = require("next-compose-plugins");
-const runtimeCaching = require("next-pwa/cache");
 const optimizedImages = require("next-optimized-images");
+const runtimeCaching = require("next-pwa/cache");
 const withPwa = require("next-pwa")({
     dest: "public",
     register: true,
@@ -16,14 +16,13 @@ const withPwa = require("next-pwa")({
 
 const baseConfig = {
     reactStrictMode: false,
+    images: {
+        unoptimized: true,
+    },
     swcMinify: true,
     env: {
     }
 };
 
 
-module.exports = withPwa(extend(baseConfig).withPlugins([
-    [optimizedImages, {
-
-    }]
-]))
+module.exports = baseConfig
