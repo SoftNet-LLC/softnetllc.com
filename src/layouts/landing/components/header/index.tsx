@@ -45,7 +45,7 @@ const LandingHeader: FC = () => {
                                 width="51"
                                 height="38"
                                 alt="SoftNet.LLC Logo"
-                            />
+                                placeholder="blur"/>
                         </LogoLink>
 
                         {
