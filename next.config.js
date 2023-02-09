@@ -16,6 +16,12 @@ const withPwa = require("next-pwa")({
 
 const baseConfig = {
     reactStrictMode: false,
+    experimental: {
+        runtime: "experimental-edge",
+    },
+    images: {
+        path: "/image",
+    },
     swcMinify: true,
     env: {
     }
