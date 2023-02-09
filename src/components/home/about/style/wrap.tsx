@@ -10,7 +10,7 @@ const HomeAboutWrap = styled.div`
     grid-template-columns: repeat(4, 500px);
     grid-gap: 16px;
     transform: translateX(-250px);
-    
+
     img {
       max-width: 100%;
       height: auto;
@@ -30,20 +30,28 @@ const HomeAboutWrap = styled.div`
     text-shadow: 1px 1px 6px #353535;
   }
 
-  @media (max-width: 1024px) {
-    padding: 60px 0 60px;
+  ${({ theme }: any) => `${theme.breakpoints.down("lg")} {
+     padding: 60px 0 60px;
     .letter-placeholder {
       font-size: 84px;
       left: 100px;
     }
-  }
+  }`}
 
-  @media (max-width: 768px) {
+  ${({ theme }: any) => `${theme.breakpoints.down("md")} {
     .letter-placeholder {
       font-size: 64px;
       left: 30px;
     }
-  }
+  }`}
+
+  ${({ theme }: any) => `${theme.breakpoints.down("sm")} {
+    padding: 60px 0 30px;
+    .letter-placeholder {
+      font-size: 52px;
+      left: 12px;
+    }
+  }`}
 `;
 
 export default HomeAboutWrap;

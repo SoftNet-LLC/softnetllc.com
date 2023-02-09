@@ -6,6 +6,8 @@ import dynamic from "next/dynamic";
 const HomeHero = dynamic(() => import("@components/home/hero"));
 const HomePartners = dynamic(() => import("@components/home/partners"), { ssr: false });
 const HomeAbout = dynamic(() => import("@components/home/about"), { ssr: false });
+const HomeExpertise = dynamic(() => import("@components/home/expertise"), { ssr: false });
+const HomeProjects = dynamic(() => import("@components/home/projects"), { ssr: false });
 const HomeChallenge = dynamic(() => import("@components/home/challenge"), { ssr: false });
 
 const pageSeo: SeoProps = {
@@ -38,6 +40,8 @@ const HomePage: NextPage = () => {
             <HomeHero/>
             <HomePartners/>
             <HomeAbout/>
+            <HomeExpertise/>
+            <HomeProjects/>
             <HomeChallenge/>
         </LandingLayout>
     );

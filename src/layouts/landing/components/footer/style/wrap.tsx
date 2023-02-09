@@ -13,7 +13,7 @@ const FooterWrap = styled.footer`
     color: #aaa;
   }
 
-  li {
+  h3 {
     color: #aaaaaa;
     list-style: none;
     font-size: 18px;

@@ -89,7 +89,7 @@ const LandingFooter: FC = () => {
                             </div>
 
                             <div>
-                                <li>Main Links</li>
+                                <h3>Main Links</h3>
                                 <Link
                                     href="/"
                                     className="nav-link">
@@ -116,7 +116,7 @@ const LandingFooter: FC = () => {
                             </div>
 
                             <div>
-                                <li>Services</li>
+                                <h3>Services</h3>
 
                                 <Link
                                     href="/"
@@ -150,7 +150,7 @@ const LandingFooter: FC = () => {
                             </div>
 
                             <div>
-                                <li>About Us</li>
+                                <h3>About Us</h3>
 
                                 <Link
                                     href="/"

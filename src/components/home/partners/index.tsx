@@ -2,7 +2,8 @@ import React, { FC, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2"
 import HomePartnersWrap from "./style/wrap";
 import { AMAZON, BISMAN, CLARINS, NAIPO, SHOPIFY, TAOBAO } from "@assets/images";
 
@@ -20,7 +21,8 @@ const HomePartners: FC = () => {
                     spacing={4}
                     container>
                     {partners.map((brand: any, key) => (
-                        <Grid item key={key}>
+                        <Grid
+                            key={key}>
                             <Image
                                 src={brand.image}
                                 alt={brand.alt}

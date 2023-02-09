@@ -1,7 +1,8 @@
 import React, { FC, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2"
 import { H2 } from "@components/shared/heading";
 import { P1 } from "@components/shared/paragraph";
 import HomeChallengeWrap from "./style/wrap";
@@ -17,11 +18,10 @@ const HomeChallenge: FC = () => {
             <Container>
                 <Grid
                     container
-                    spacing={6}
+                    spacing={4}
                     direction="row"
                     justifyContent="center">
                     <Grid
-                        item
                         lg={12}
                         xs={12}>
                         <H2 id='home-challenge-title'>
@@ -30,8 +30,9 @@ const HomeChallenge: FC = () => {
                     </Grid>
 
                     <Grid
-                        item
-                        lg={5}
+                        lg={4}
+                        md={5}
+                        sm={6}
                         xs={12}>
                         <P1 id='home-challenge-content1'>
                             We strive for <b> excellence </b> for all our
@@ -42,7 +43,11 @@ const HomeChallenge: FC = () => {
                         </P1>
                     </Grid>
 
-                    <Grid item lg={5} xs={12}>
+                    <Grid
+                        lg={4}
+                        md={5}
+                        sm={6}
+                        xs={12}>
                         <P1 id='home-challenge-content2'>
                             We are used to working on projects with{" "}
                             <b> high technical </b> and

@@ -15,6 +15,11 @@ const GlobalStyle = () => {
                 box-sizing: border-box;
                 font-family: 'IBM Plex Mono', monospace;
               }
+
+              img {
+                max-width: 100%;
+                height: auto;
+              }
             `}
         />
     );
