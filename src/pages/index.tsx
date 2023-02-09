@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import LandingLayout from "@layouts/landing";
 import { SeoProps } from "@utils/types/layout.type";
 import HomeHero from "@components/home/hero";
+import HomePartners from "@components/home/partners";
 
 const pageSeo: SeoProps = {
     title: "Home - SoftNet.LLC",
@@ -32,6 +33,7 @@ const HomePage: NextPage = () => {
     return (
         <LandingLayout seo={pageSeo}>
             <HomeHero/>
+            <HomePartners/>
         </LandingLayout>
     );
 };
