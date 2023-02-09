@@ -1,3 +1,10 @@
-export const LOGO = "/images/logo.png";
-export const LOGO_LIGHT = "/images/logo-light.png";
-export const LOGO_DARK = "/images/logo-dark.png";
+import LOGO from "./logo.png";
+import LOGO_LIGHT from "./logo-light.png";
+import LOGO_DARK from "./logo-dark.png";
+
+
+export {
+    LOGO,
+    LOGO_LIGHT,
+    LOGO_DARK
+}
