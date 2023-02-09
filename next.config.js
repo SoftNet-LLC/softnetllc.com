@@ -11,9 +11,7 @@ const withPWA = require("next-pwa")({
 const nextConfig = {
     reactStrictMode: false,
     swcMinify: true,
-    experimental: {
-        runtime: "edge",
-    },
+    runtime: "experimental-edge",
     env: {
     }
 };
