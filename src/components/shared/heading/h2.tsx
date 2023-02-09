@@ -5,12 +5,13 @@ interface Props {
 }
 
 const H2 = styled.h2<Props>`
-    font-size: 42px;
-    color: ${({ color }) => (color === "light" ? "#ffffff" : "#000000")};
+  font-size: 42px;
+  color: ${({ color }) => (color === "light" ? "#ffffff" : "#000000")};
 
-    span {
-        color: #f20091;
-    }
+  mark {
+    color: #f20091;
+    background-color: transparent;
+  }
 `;
 
 export default H2;

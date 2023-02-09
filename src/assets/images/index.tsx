@@ -8,6 +8,10 @@ import NAIPO from "./naipo.webp"
 import NOICE from "./noice.webp"
 import SHOPIFY from "./shopify.webp"
 import TAOBAO from "./taobao.webp"
+import HOME_ABOUT1 from "./home-about1.webp"
+import HOME_ABOUT2 from "./home-about2.webp"
+import HOME_ABOUT3 from "./home-about3.webp"
+import HOME_ABOUT4 from "./home-about4.webp"
 
 
 export {
@@ -20,5 +24,9 @@ export {
     NAIPO,
     BISMAN,
     SHOPIFY,
-    TAOBAO
+    TAOBAO,
+    HOME_ABOUT1,
+    HOME_ABOUT2,
+    HOME_ABOUT3,
+    HOME_ABOUT4,
 }

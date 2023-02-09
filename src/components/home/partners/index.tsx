@@ -13,7 +13,7 @@ const HomePartners: FC = () => {
     }, []);
 
     return (
-        <HomePartnersWrap>
+        <HomePartnersWrap id="home-partners">
             <Container>
                 <Grid
                     justifyContent="space-around"
@@ -26,7 +26,7 @@ const HomePartners: FC = () => {
                                 alt={brand.alt}
                                 width="135"
                                 height="47"
-                                priority={true}
+                                placeholder="blur"
                                 className="home-partners-item"/>
                         </Grid>
 
