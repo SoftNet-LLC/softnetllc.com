@@ -17,6 +17,12 @@ const pageSeo: SeoProps = {
         "LLC",
         "Web Development",
         "Website Development",
+        "Mobile App Development",
+        "Developers in US",
+        "Agency in US",
+        "United State Software",
+        "Web Design",
+        "App Development",
         "US web service"
     ],
     url: "https://softnetllc.com"
