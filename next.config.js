@@ -1,21 +1,29 @@
-const runtimeCaching = require("next-pwa/cache");
+/**
+ * @type {import('next').NextConfig}
+ */
 
-const withPWA = require("next-pwa")({
+const { withPlugins, extend } = require("next-compose-plugins");
+const runtimeCaching = require("next-pwa/cache");
+const optimizedImages = require("next-optimized-images");
+const withPwa = require("next-pwa")({
     dest: "public",
     register: true,
     skipWaiting: true,
     runtimeCaching,
     buildExcludes: [/middleware-manifest.json$/]
-});
+})
 
-const nextConfig = {
+
+const baseConfig = {
     reactStrictMode: false,
     swcMinify: true,
-    experimental: {
-        runtime: "edge",
-    },
     env: {
     }
 };
 
-module.exports = nextConfig
+
+module.exports = withPwa(extend(baseConfig).withPlugins([
+    [optimizedImages, {
+
+    }]
+]))
