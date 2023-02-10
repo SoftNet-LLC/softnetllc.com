@@ -13,12 +13,12 @@ export const menus: MenusType[] = [
         link: "/services"
     },
     {
-        label: "Team",
-        link: "/developers"
+        label: "About",
+        link: "/about"
     },
     {
-        label: "Testminals",
-        link: "/testminals"
+        label: "Reviews",
+        link: "/reviews"
     },
     {
         label: "Blogs",

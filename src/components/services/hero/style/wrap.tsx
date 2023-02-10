@@ -2,9 +2,19 @@ import styled from "@emotion/styled";
 
 const ServicesHeroWrap = styled.section`
   margin-top: 92px;
-  min-height: 450px;
+  min-height: 550px;
   display: flex;
   align-items: center;
+  position: relative;
+  background-color: #0000004f;
+  
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
   
   h1 {
     font-size: 42px;

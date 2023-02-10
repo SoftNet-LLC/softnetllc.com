@@ -16,7 +16,7 @@ const HomeHero: FC = () => {
     return (
         <HomeHeroWrap id="home-hero">
             <video autoPlay muted loop id="home-hero-video">
-                <source src="https://file.softnetllc.com/home.mp4"/>
+                <source src="https://file.softnetllc.com/home2.mp4"/>
             </video>
             <Container>
                 <Grid container>

@@ -16,6 +16,15 @@ const ServicesHero: FC<Props> = (props) => {
 
     return (
         <ServicesHeroWrap style={{ backgroundColor: tab.color }}>
+            {
+                !tab.color && (
+                    <video
+                        src="https://www.shutterstock.com/shutterstock/videos/1060927057/preview/stock-footage-digital-flight-through-info-graphics-stock-market-digital-graph-abstract-technology-ui-futuristic.webm"
+                        muted
+                        loop
+                        autoPlay/>
+                )
+            }
             <Container>
                 <Grid
                     alignItems="center"

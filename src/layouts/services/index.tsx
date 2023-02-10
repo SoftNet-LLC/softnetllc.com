@@ -22,7 +22,6 @@ const ServicesLayout: FC<Props> = (props) => {
             description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sin",
             button: "Start Conversation",
             link: "/services/web",
-            color: "#B31942",
             image: ""
         },
         {
