@@ -4,6 +4,11 @@ import styled from "@emotion/styled";
 const FooterWrap = styled.footer`
   padding: 90px 0 0;
   background-color: #1f1f1f;
+  
+  img {
+    width: 51px;
+    height: auto;
+  }
 
   h2 {
     font-size: 24px;

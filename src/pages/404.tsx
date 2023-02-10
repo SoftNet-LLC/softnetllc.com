@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 
 const pageSeo: SeoProps = {
     title: "404 page not found - SoftNet.LLC",
-    description: "Web & Mobile app development service in United State.",
+    description: "Web & Mobile app development services in United State.",
     image: {
         url: "/softnetllc.jpg",
         width: 1000,
@@ -22,7 +22,7 @@ const pageSeo: SeoProps = {
         "LLC",
         "Web Development",
         "Website Development",
-        "US web service"
+        "US web services"
     ],
     url: "https://softnetllc.com"
 }
@@ -37,7 +37,7 @@ const NotFoundPage: NextPage = () => {
                 <Stack
                     style={{ textAlign: "center", alignItems: "center" }}
                     spacing={3}>
-                    <H1 style={{ fontSize: 150, lineHeight: 1, color: theme.palette.error.main }}>
+                    <H1 style={{ fontSize: 150, lineHeight: 1, color: theme.palette.secondary.main }}>
                         404
                     </H1>
                     <P1 style={{ fontSize: 18, marginBottom: 24 }}>

@@ -14,7 +14,7 @@ const withPwa = require("next-pwa")({
 })
 
 
-const baseConfig = withPwa({
+const baseConfig = {
     reactStrictMode: false,
     images: {
         unoptimized: true,
@@ -22,7 +22,7 @@ const baseConfig = withPwa({
     swcMinify: true,
     env: {
     }
-});
+};
 
 
 module.exports = baseConfig

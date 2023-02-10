@@ -21,8 +21,6 @@ const HomeAction: FC = () => {
                         <div>
                             <Image
                                 src={ILLUS1}
-                                width="500"
-                                height="300"
                                 alt=""/>
                         </div>
                     </Grid>

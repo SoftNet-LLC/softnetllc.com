@@ -35,8 +35,8 @@ const LandingFooter: FC = () => {
                                     <LogoLink href="/">
                                         <Image
                                             src={LOGO_LIGHT}
-                                            width="51"
-                                            height="38"
+                                            width="300"
+                                            height="235"
                                             alt="SoftNet.LLC Logo"
                                             placeholder="blur"/>
                                     </LogoLink>
@@ -175,8 +175,8 @@ const LandingFooter: FC = () => {
                             <LogoLink href="/">
                                 <Image
                                     src={LOGO_LIGHT}
-                                    width="51"
-                                    height="38"
+                                    width="300"
+                                    height="235"
                                     alt="SoftNet.LLC Logo"
                                     placeholder="blur"/>
                             </LogoLink>

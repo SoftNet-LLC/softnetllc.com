@@ -42,8 +42,8 @@ const LandingHeader: FC = () => {
                         <LogoLink href="/">
                             <Image
                                 src={LOGO}
-                                width="51"
-                                height="38"
+                                width={300}
+                                height={235}
                                 alt="SoftNet.LLC Logo"
                                 placeholder="blur"/>
                         </LogoLink>

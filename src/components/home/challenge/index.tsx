@@ -30,8 +30,8 @@ const HomeChallenge: FC = () => {
                     </Grid>
 
                     <Grid
-                        lg={4}
-                        md={5}
+                        lg={8}
+                        md={10}
                         sm={6}
                         xs={12}>
                         <P1 id='home-challenge-content1'>
@@ -40,21 +40,6 @@ const HomeChallenge: FC = () => {
                             pragmatic way possible in complete transparency with
                             you and your teams throughout the development
                             process.
-                        </P1>
-                    </Grid>
-
-                    <Grid
-                        lg={4}
-                        md={5}
-                        sm={6}
-                        xs={12}>
-                        <P1 id='home-challenge-content2'>
-                            We are used to working on projects with{" "}
-                            <b> high technical </b> and
-                            <b> commercial stakes</b>. Whether for{" "}
-                            <b> start-ups </b> or <b> large groups</b>, we know
-                            how to adapt our methods and are ready to meet any
-                            challenge.
                         </P1>
                     </Grid>
                 </Grid>
@@ -89,18 +74,6 @@ const animate = () => {
             {
                 opacity: 0,
                 x: 20,
-            },
-            {
-                opacity: 1,
-                x: 0,
-            }
-        )
-
-        .fromTo(
-            "#home-challenge-content2",
-            {
-                opacity: 0,
-                x: -20,
             },
             {
                 opacity: 1,

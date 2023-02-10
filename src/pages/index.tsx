@@ -14,7 +14,7 @@ const HomeAction = dynamic(() => import("@components/home/action"), { ssr: false
 
 const pageSeo: SeoProps = {
     title: "Home - SoftNet.LLC",
-    description: "Web & Mobile app development service in United State.",
+    description: "Web & Mobile app development services in United State.",
     image: {
         url: "/softnetllc.jpg",
         width: 1000,
@@ -31,7 +31,7 @@ const pageSeo: SeoProps = {
         "United State Software",
         "Web Design",
         "App Development",
-        "US web service"
+        "US web services"
     ],
     url: "https://softnetllc.com"
 }

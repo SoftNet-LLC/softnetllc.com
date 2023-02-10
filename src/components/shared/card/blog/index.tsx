@@ -1,11 +1,13 @@
 import React, { FC } from "react";
 import { BlogType } from "@utils/types/blog";
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
-import { H4 } from "@components/shared/heading";
+import { H3, H4 } from "@components/shared/heading";
 
 const BlogCard: FC<BlogType> = () => {
     return (
-        <Card sx={{ maxWidth: 340, borderRadius: 0 }}>
+        <Card
+            className="home-blog-item"
+            sx={{ maxWidth: 340, borderRadius: 0 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -14,7 +16,7 @@ const BlogCard: FC<BlogType> = () => {
                     alt="green iguana"/>
             </CardActionArea>
             <CardContent>
-                <H4>Lizard</H4>
+                <H3 style={{ fontSize: 20, marginBottom: 8 }}>We are okay for start up!</H3>
                 <Typography variant="body2" color="text.secondary">
                     Lizards are a widespread group of squamate reptiles, with over 6,000
                     species, ranging across all continents except Antarctica

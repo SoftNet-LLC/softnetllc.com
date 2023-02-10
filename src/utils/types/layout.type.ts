@@ -12,7 +12,9 @@ export type SeoProps = {
     url?: string;
 }
 
+export type Children = React.ReactElement | React.ReactElement[] | string | undefined | any
+
 export type LayoutType = {
-    children?: React.ReactElement | React.ReactElement[] | string | undefined | any;
+    children?: Children;
     seo?: SeoProps
 }
