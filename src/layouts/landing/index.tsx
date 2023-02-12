@@ -15,8 +15,8 @@ const LandingLayout: FC<LayoutType> = (props) => {
     return (
         <Fragment>
             <SeoHead {...seo}/>
-            {bkp !== "mob" && <NavBar/>}
             <LandingHeader/>
+            {bkp !== "mob" && <NavBar/>}
             <main style={{ minHeight: "100vh" }}>
                 {children}
             </main>

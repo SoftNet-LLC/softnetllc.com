@@ -2,6 +2,8 @@ import React from "react";
 import LandingLayout from "@layouts/landing";
 import { SeoProps } from "@utils/types/layout.type";
 import { NextPage } from "next";
+import AboutHero from "@components/about/hero";
+import AboutTeam from "@components/about/team";
 
 const pageSeo: SeoProps = {
     title: "About - SoftNet.LLC",
@@ -30,7 +32,8 @@ const pageSeo: SeoProps = {
 const AboutPage: NextPage = () => {
     return (
         <LandingLayout seo={pageSeo}>
-
+            <AboutHero/>
+            <AboutTeam/>
         </LandingLayout>
     );
 };

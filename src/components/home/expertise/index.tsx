@@ -31,9 +31,9 @@ const HomeExpertise: FC = () => {
                     </Grid>
 
                     <Grid
-                        lg={4}
-                        md={5}
-                        sm={6}
+                        lg={8}
+                        md={10}
+                        sm={12}
                         xs={12}>
                         <P1 id="home-expertise-content1">
                             We design, develop and maintain high-performance web
@@ -41,19 +41,6 @@ const HomeExpertise: FC = () => {
                             <b> complex business and technical issues</b>. We
                             set up cloud architectures that can scale to several
                             hundred thousand users.
-                        </P1>
-                    </Grid>
-
-                    <Grid
-                        lg={4}
-                        md={5}
-                        sm={6}
-                        xs={12}>
-                        <P1 id="home-expertise-content2">
-                            We advise you on your business strategy based on our
-                            experience and a<b> 360-degree view of </b> the
-                            technical challenges: UX, acquisition, SEO, SEA,
-                            choice of service providers and technical tools.
                         </P1>
                     </Grid>
                     <Grid
@@ -101,18 +88,6 @@ const animate = () => {
             {
                 opacity: 0,
                 x: 20,
-            },
-            {
-                opacity: 1,
-                x: 0,
-            }
-        )
-
-        .fromTo(
-            "#home-expertise-content2",
-            {
-                opacity: 0,
-                x: -20,
             },
             {
                 opacity: 1,

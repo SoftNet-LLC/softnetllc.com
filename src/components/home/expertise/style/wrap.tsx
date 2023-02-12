@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const HomeExpertiseWrap = styled.section`
   padding: 65px 0 130px;
 
-  h2 {
+  h2, p {
     text-align: center;
   }
 

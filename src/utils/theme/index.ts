@@ -80,6 +80,13 @@ const theme = createTheme({
                 },
             },
         },
+        MuiOutlinedInput: {
+            defaultProps: {
+                sx: {
+                    borderRadius: 0
+                }
+            }
+        }
     },
 });
 

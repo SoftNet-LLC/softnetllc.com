@@ -1,0 +1,87 @@
+import React, { FC } from "react";
+import ContactFormWrap from "./style/wrap";
+import Grid from "@mui/material/Unstable_Grid2";
+import {
+    FormControl,
+    InputLabel,
+    MenuItem,
+    Select,
+    Stack,
+    TextField
+} from "@mui/material";
+import { Container } from "@mui/system";
+import { H2 } from "@components/shared/heading";
+import { ActionButton } from "@components/shared/button";
+import { P3 } from "@components/shared/paragraph";
+import Label from "@components/shared/input/label";
+
+const ContactForm: FC = () => {
+    return (
+        <ContactFormWrap>
+            <Container>
+                <Grid
+                    justifyContent="center"
+                    container>
+                    <Grid
+                        lg={7}
+                        xs={12}>
+                        <div className="contact-form-card">
+                            <H2>Contact Us</H2>
+                            <P3> If you have any questions or request, please write here. We will respond you in 1 day.</P3>
+                            <Grid
+                                container
+                                spacing={5}>
+                                <Grid xs={12}>
+                                    <Label htmlFor="label">Your Name*</Label>
+                                    <TextField
+                                        fullWidth
+                                        id="name"
+                                        name="name" />
+                                </Grid>
+                                <Grid xs={12}>
+                                    <Label htmlFor="email">Your Email*</Label>
+                                    <TextField
+                                        id="email"
+                                        name="email"
+                                        fullWidth/>
+                                </Grid>
+                                <Grid xs={12}>
+                                    <Label htmlFor="subject">Your Subject*</Label>
+                                    <FormControl fullWidth>
+                                        <Select
+                                            id="subject"
+                                            name="subject">
+                                            <MenuItem value={"general"}>General</MenuItem>
+                                            <MenuItem value={"start"}>I wanna start a project</MenuItem>
+                                        </Select>
+                                    </FormControl>
+                                </Grid>
+                                <Grid xs={12}>
+                                    <Label htmlFor="message">Your Message*</Label>
+                                    <TextField
+                                        id="message"
+                                        name="message"
+                                        multiline
+                                        fullWidth
+                                        minRows={4}
+                                        maxRows={4}
+                                    />
+                                </Grid>
+                                <Grid>
+                                    <ActionButton
+                                        color="info"
+                                        fullWidth={false}
+                                        variant="contained">
+                                        Submit Contact
+                                    </ActionButton>
+                                </Grid>
+                            </Grid>
+                        </div>
+                    </Grid>
+                </Grid>
+            </Container>
+        </ContactFormWrap>
+    );
+};
+
+export default ContactForm;

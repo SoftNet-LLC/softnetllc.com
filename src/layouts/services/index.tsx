@@ -2,7 +2,16 @@ import React, { FC, Fragment, useState } from "react";
 import ServicesHero from "@components/services/hero";
 import { Container } from "@mui/system";
 import IconTab, { TabType } from "@components/shared/tab/icon";
-import { Addchart, Api, DevicesOther, FindInPage, ManageSearch, PhoneIphone, Terminal } from "@mui/icons-material";
+import {
+    Addchart,
+    Api,
+    CurrencyBitcoin,
+    DevicesOther,
+    FindInPage,
+    ManageSearch,
+    PhoneIphone,
+    Terminal
+} from "@mui/icons-material";
 import { Children } from "@utils/types/layout.type";
 
 
@@ -14,16 +23,6 @@ const ServicesLayout: FC<Props> = (props) => {
     const { children } = props
 
     const tabs: TabType[] = [
-        {
-            value: "overview",
-            label: "Overview",
-            icon: <DevicesOther/>,
-            title: "Soft Net services",
-            description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sin",
-            button: "Start Conversation",
-            link: "/services/web",
-            image: ""
-        },
         {
             value: "web",
             label: "Websites",
@@ -100,10 +99,30 @@ const ServicesLayout: FC<Props> = (props) => {
             link: "/services/web",
             color: "#0c0a39",
             image: "/temp/data.png"
+        },
+        {
+            value: "blockchain",
+            label: "BlockChain",
+            icon: <CurrencyBitcoin/>,
+            title: "Blockchain & Dapp",
+            description: "oing through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections ",
+            button: "Start Conversation",
+            link: "/services/blockchain",
+            color: "#F7931A",
+            image: "/temp/coin.png"
         }
     ]
 
-    const [tab,setTab] = useState<TabType>(tabs[0]);
+    const [tab,setTab] = useState<TabType>({
+        value: "overview",
+        label: "Overview",
+        icon: <DevicesOther/>,
+        title: "Soft Net services",
+        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sin",
+        button: "Start Conversation",
+        link: "/services/web",
+        image: ""
+    });
     const tabChangeHandle = (t: TabType) => {
         setTab(t);
     }

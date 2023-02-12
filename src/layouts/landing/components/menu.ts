@@ -17,15 +17,15 @@ export const menus: MenusType[] = [
         link: "/about"
     },
     {
-        label: "Reviews",
-        link: "/reviews"
-    },
-    {
         label: "Blogs",
         link: "/blogs"
     },
     {
-        label: "Jobs",
-        link: "/jobs"
-    }
+        label: "Contact",
+        link: "/contact"
+    },
+    // {
+    //     label: "Jobs",
+    //     link: "/jobs"
+    // }
 ]

@@ -4,10 +4,6 @@ const GlobalStyle = () => {
     return (
         <Global
             styles={css`
-              html,
-              body {
-                overflow-x: hidden;
-              }
 
               * {
                 padding: 0;
@@ -19,6 +15,12 @@ const GlobalStyle = () => {
               img {
                 max-width: 100%;
                 height: auto;
+              }
+
+              .header-action {
+                //background-color: #F6E009 !important;
+                //color: #000!important;
+                //box-shadow: none!important;
               }
             `}
         />

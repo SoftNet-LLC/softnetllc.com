@@ -14,7 +14,7 @@ import {
     ListItemText,
     Stack
 } from "@mui/material";
-import { Menu } from "@mui/icons-material";
+import { Menu, Phone } from "@mui/icons-material";
 import { HeaderWrap } from "./style";
 import { menus } from "../menu";
 import useBreakpoints from "@utils/hooks/breakpoints.hooks";
@@ -32,7 +32,7 @@ const LandingHeader: FC = () => {
 
 
     return (
-        <AppBar color="transparent">
+        <AppBar style={{ borderBottom: "1px solid #B31942" }} color="transparent">
             <Container>
                 <HeaderWrap>
                     <Stack
@@ -50,19 +50,35 @@ const LandingHeader: FC = () => {
 
                         {
                             bkp === "mob" ? (
-                                <IconButton
-                                    size="large"
-                                    edge="start"
-                                    color="inherit"
-                                    aria-label="menu"
-                                    sx={{ mr: 2 }}
-                                    onClick={() => {
-                                        setOpen(true)
-                                    }}>
-                                    <Menu/>
-                                </IconButton>
+                                <Stack direction="row" spacing={2}>
+                                    <Button
+                                        color="secondary"
+                                        variant="text"
+                                        href="tel:(253) 533-2244">
+                                        <Phone style={{ fontSize: 16, marginRight: 8 }}/>
+                                        (253) 533-2244
+                                    </Button>
+                                    <IconButton
+                                        size="large"
+                                        edge="start"
+                                        color="inherit"
+                                        aria-label="menu"
+                                        sx={{ mr: 2 }}
+                                        onClick={() => {
+                                            setOpen(true)
+                                        }}>
+                                        <Menu/>
+                                    </IconButton>
+                                </Stack>
                             ) : (
                                 <Stack direction="row" spacing={2}>
+                                    <Button
+                                        color="secondary"
+                                        variant="text"
+                                        href="tel:(253) 533-2244">
+                                        <Phone style={{ fontSize: 16, marginRight: 8 }}/>
+                                        (253) 533-2244
+                                    </Button>
                                     <Button
                                         color="primary"
                                         variant="outlined"
@@ -73,6 +89,7 @@ const LandingHeader: FC = () => {
                                     </Button>
                                     <Button
                                         id="conversation"
+                                        className="header-action"
                                         color="secondary"
                                         variant="contained"
                                         onClick={() => {
@@ -123,6 +140,7 @@ const LandingHeader: FC = () => {
                                         </Button>
                                         <Button
                                             fullWidth
+                                            className="header-action"
                                             color="secondary"
                                             variant="contained"
                                             size="large"

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const ServicesHeroWrap = styled.section`
-  margin-top: 92px;
+  margin-top: 55px;
   min-height: 550px;
   display: flex;
   align-items: center;

@@ -17,14 +17,14 @@ const HomeAction: FC = () => {
                     alignItems="center"
                     spacing={3}
                     container>
-                    <Grid>
+                    <Grid lg={4}>
                         <div>
                             <Image
                                 src={ILLUS1}
                                 alt=""/>
                         </div>
                     </Grid>
-                    <Grid>
+                    <Grid lg={7}>
                         <Stack
                             spacing={3}
                             justifyContent="center"
