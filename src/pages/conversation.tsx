@@ -15,12 +15,37 @@ import ConversationFiles from "@components/conversation/files";
 import ConversationLinks from "@components/conversation/links";
 import { useStore } from "effector-react";
 import { $conversation } from "@store/converstaion/state";
+import { SeoProps } from "@utils/types/layout.type";
+
+const pageSeo: SeoProps = {
+    title: "Contact Us - SoftNet.LLC",
+    description: "Web & Mobile app development services in United State.",
+    image: {
+        url: "/softnetllc.jpg",
+        width: 1000,
+        height: 510
+    },
+    keywords: [
+        "SoftNet",
+        "LLC",
+        "Web Development",
+        "Website Development",
+        "Mobile App Development",
+        "Developers in US",
+        "Agency in US",
+        "United State Software",
+        "Web Design",
+        "App Development",
+        "US web services"
+    ],
+    url: "https://softnetllc.com/conversation"
+}
 
 const ConversationPage: FC = () => {
     const cvs = useStore($conversation)
 
     return (
-        <ConversationLayout>
+        <ConversationLayout seo={pageSeo}>
             {{
                 name: <ConversationName/>,
                 welcome: <ConversationWelcome/>,

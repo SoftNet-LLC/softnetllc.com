@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const ConversationWrap = styled.section`
-  background-color: ${({ theme }: any) => `${theme.palette.secondary.main}3f`};
+  background-color: ${({ theme }: any) => `${theme.palette.secondary.main}0f`};
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;

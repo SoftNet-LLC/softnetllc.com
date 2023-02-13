@@ -1,7 +1,7 @@
 import React, { FC, Fragment, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button, Container, LinearProgress } from "@mui/material";
+import { Button, Container, LinearProgress, Stack } from "@mui/material";
 import { LayoutType } from "@utils/types/layout.type";
 import { LOGO } from "@assets/images";
 import SeoHead from "@components/shared/seo/head";
@@ -15,7 +15,6 @@ import { P3 } from "@components/shared/paragraph";
 import BootstrapTooltip from "@components/shared/tooltip";
 import { useStore } from "effector-react";
 import { $conversation } from "@store/converstaion/state";
-import { Stack } from "@mui/system";
 import { nextEvent } from "@store/converstaion/events";
 
 const pageMap: any = {
@@ -44,7 +43,7 @@ const ConversationLayout: FC<LayoutType> = (props) => {
             <ConversationWrap>
                 <div className="progress-bar">
                     <LinearProgress
-                        color="success"
+                        color="secondary"
                         sx={{
                             height: 8
                         }}
@@ -96,7 +95,7 @@ const ConversationLayout: FC<LayoutType> = (props) => {
                                 disabled
                                 color="secondary"
                                 variant="outlined">
-                                {pageMap[cvs?.current]?.[2]}/10
+                                {pageMap[cvs?.current]?.[2] > 10 ? 10 : pageMap[cvs?.current]?.[2]}/10
                             </Button>
                             <BootstrapTooltip
                                 placement="top"

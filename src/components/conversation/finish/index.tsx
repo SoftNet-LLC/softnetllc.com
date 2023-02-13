@@ -1,9 +1,12 @@
 import React, { FC } from "react";
+import { useRouter } from "next/router";
 import { Button, Stack } from "@mui/material";
 import { P1 } from "@components/shared/paragraph";
 
 const ConversationFinish: FC = () => {
     const name = "Nicholi"
+    const router: any = useRouter();
+
 
     return (
         <div>
@@ -31,6 +34,7 @@ const ConversationFinish: FC = () => {
                 alignItems="center"
                 style={{ marginTop: 24 }}>
                 <Button
+                    onClick={()=>{router.push("/login")}}
                     size="large"
                     color="secondary"
                     variant="contained">

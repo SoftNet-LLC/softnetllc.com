@@ -26,7 +26,6 @@ const IconTab: FC<TabsType> = (props) => {
     const [tab, setTab] = useState<string>(defaultValue || "");
 
     const tabChange = (event: React.SyntheticEvent, newValue: string) => {
-        console.log(newValue)
         setTab(newValue);
         if (onChange) {
             onChange(tabs.filter((i) => i.value === newValue)[0])

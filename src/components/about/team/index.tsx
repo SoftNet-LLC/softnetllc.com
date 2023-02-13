@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import AboutTeamWrap from "./style/wrap";
-import { Container } from "@mui/system";
 import { H2 } from "@components/shared/heading";
 import { P1, P2 } from "@components/shared/paragraph";
 import Grid from "@mui/material/Unstable_Grid2";
 import { ActionButton } from "@components/shared/button";
+import { Container } from "@mui/material";
 
 const AboutTeam: FC = () => {
     return (

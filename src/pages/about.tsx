@@ -26,7 +26,7 @@ const pageSeo: SeoProps = {
         "App Development",
         "US web services"
     ],
-    url: "https://softnetllc.com"
+    url: "https://softnetllc.com/about"
 }
 
 const AboutPage: NextPage = () => {

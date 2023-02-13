@@ -1,6 +1,5 @@
-import React, { FC, Fragment, useState } from "react";
+import React, { FC, Fragment, useEffect, useState } from "react";
 import ServicesHero from "@components/services/hero";
-import { Container } from "@mui/system";
 import IconTab, { TabType } from "@components/shared/tab/icon";
 import {
     Addchart,
@@ -13,16 +12,29 @@ import {
     Terminal
 } from "@mui/icons-material";
 import { Children } from "@utils/types/layout.type";
+import { Container } from "@mui/material";
+import { useRouter } from "next/router";
 
 
 interface Props {
-    children: Children
+    children?: Children
 }
 
 const ServicesLayout: FC<Props> = (props) => {
     const { children } = props
+    const router: any = useRouter();
 
     const tabs: TabType[] = [
+        {
+            value: "overview",
+            label: "Overview",
+            icon: <DevicesOther/>,
+            title: "Soft Net services",
+            description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sin",
+            button: "Start Conversation",
+            link: "/services/web",
+            image: ""
+        },
         {
             value: "web",
             label: "Websites",
@@ -126,6 +138,10 @@ const ServicesLayout: FC<Props> = (props) => {
     const tabChangeHandle = (t: TabType) => {
         setTab(t);
     }
+
+    useEffect(()=>{
+    }, [])
+
 
     return (
         <Fragment>

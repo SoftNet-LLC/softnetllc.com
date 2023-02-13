@@ -2,8 +2,8 @@ import React, { FC } from "react";
 import { SeoProps } from "@utils/types/layout.type";
 import LandingLayout from "@layouts/landing";
 import ServicesLayout from "@layouts/services";
-import { Container } from "@mui/system";
 import ServiceOverViewMap from "@components/services/overview/map";
+import { Container } from "@mui/material";
 
 
 const pageSeo: SeoProps = {

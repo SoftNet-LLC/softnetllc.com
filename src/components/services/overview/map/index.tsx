@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import ServiceOverViewMapWrap from "./style/wrap";
 import Grid from "@mui/material/Unstable_Grid2";
-import { Stack } from "@mui/system";
 import { P2 } from "@components/shared/paragraph";
-import { Check, Computer } from "@mui/icons-material";
+import { Computer } from "@mui/icons-material";
+import { Stack } from "@mui/material";
 
 const ServiceOverViewMap: FC = () => {
     return (
