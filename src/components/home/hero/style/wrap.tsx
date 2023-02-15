@@ -28,8 +28,11 @@ const HomeHeroWrap = styled.section`
     height: 100%;
     z-index: 1;
     padding-top: 54px;
-    
   }
+
+  ${({ theme }: any) => `${theme.breakpoints.down("sm")} {
+    height: 100vh;
+  }`}
 `;
 
 export default HomeHeroWrap;

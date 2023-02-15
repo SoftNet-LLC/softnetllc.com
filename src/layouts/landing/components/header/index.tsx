@@ -47,7 +47,6 @@ const LandingHeader: FC = () => {
                                 alt="SoftNet.LLC Logo"
                                 placeholder="blur"/>
                         </LogoLink>
-
                         {
                             bkp === "mob" ? (
                                 <Stack direction="row" spacing={2}>
@@ -107,9 +106,7 @@ const LandingHeader: FC = () => {
                             onClose={() => {
                                 setOpen(false)
                             }}>
-                            <Box
-                                sx={{ width: "auto" }}
-                                role="presentation">
+                            <div style={{ padding: 12 }}>
                                 <List>
                                     {menus.map((menu, i) => (
                                         <ListItem
@@ -124,34 +121,31 @@ const LandingHeader: FC = () => {
                                         </ListItem>
                                     ))}
                                 </List>
-                                <Box
-                                    sx={{ p: 1 }}>
-                                    <Stack
-                                        spacing={1}>
-                                        <Button
-                                            fullWidth
-                                            color="primary"
-                                            variant="outlined"
-                                            size="large"
-                                            onClick={() => {
-                                                router.push("/login")
-                                            }}>
-                                            Login
-                                        </Button>
-                                        <Button
-                                            fullWidth
-                                            className="header-action"
-                                            color="secondary"
-                                            variant="contained"
-                                            size="large"
-                                            onClick={() => {
-                                                router.push("/conversation")
-                                            }}>
-                                            Conversation Now
-                                        </Button>
-                                    </Stack>
-                                </Box>
-                            </Box>
+                                <Stack
+                                    spacing={1}>
+                                    <Button
+                                        fullWidth
+                                        color="primary"
+                                        variant="outlined"
+                                        size="large"
+                                        onClick={() => {
+                                            router.push("/login")
+                                        }}>
+                                        Login
+                                    </Button>
+                                    <Button
+                                        fullWidth
+                                        className="header-action"
+                                        color="secondary"
+                                        variant="contained"
+                                        size="large"
+                                        onClick={() => {
+                                            router.push("/conversation")
+                                        }}>
+                                        Conversation Now
+                                    </Button>
+                                </Stack>
+                            </div>
                         </Drawer>
                     </Stack>
                 </HeaderWrap>
