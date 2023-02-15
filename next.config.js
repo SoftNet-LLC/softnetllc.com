@@ -18,6 +18,9 @@ const withPwa = require("next-pwa")({
 const baseConfig = withTM({
     reactStrictMode: false,
     swcMinify: true,
+    images: {
+        unoptimized: true,
+    },
     env: {
     }
 });
