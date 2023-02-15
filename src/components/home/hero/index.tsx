@@ -8,7 +8,7 @@ import { H1 } from "@components/shared/heading";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Container } from "@mui/material";
 import Image from "next/image";
-import { AUTH_BG, HOME_HERO } from "@assets/images";
+import { HOME_HERO } from "@assets/images";
 
 const Points = () => {
     const imageTex = useLoader(TextureLoader, "/circle.png")
@@ -59,24 +59,26 @@ const Points = () => {
 
     return (
         <points>
-            <bufferGeometry
-                attach="geometry">
-                <bufferAttribute
-                    ref={bufferRef}
-                    attach="attributes-position"
-                    array={positions}
-                    count={positions.length}
-                    itemSize={3}/>
-            </bufferGeometry>
-            <pointsMaterial
-                map={imageTex}
-                color={0x00AAFF}
-                size={0.4}
-                sizeAttenuation={true}
-                transparent={false}
-                alphaTest={0.1}
-                opacity={0.5}
-                attach="material"/>
+            <Suspense fallback={null}>
+                <bufferGeometry
+                    attach="geometry">
+                    <bufferAttribute
+                        ref={bufferRef}
+                        attach="attributes-position"
+                        array={positions}
+                        count={positions.length/3}
+                        itemSize={3}/>
+                </bufferGeometry>
+                <pointsMaterial
+                    map={imageTex}
+                    color={0x00AAFF}
+                    size={0.4}
+                    sizeAttenuation={true}
+                    transparent={false}
+                    alphaTest={0.1}
+                    opacity={0.5}
+                    attach="material"/>
+            </Suspense>
         </points>
     )
 }
@@ -87,7 +89,6 @@ const AnimationCanvas = () => {
         <Fragment>
             <Suspense fallback={null}>
                 <Points/>
-                {/*<Controls/>*/}
             </Suspense>
         </Fragment>
     )
