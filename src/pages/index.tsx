@@ -3,7 +3,7 @@ import { NextPage } from "next";
 import LandingLayout from "@layouts/landing";
 import { SeoProps } from "@utils/types/layout.type";
 import dynamic from "next/dynamic";
-const HomeHero = dynamic(() => import("@components/home/hero"));
+import HomeHero from "@components/home/hero";
 const HomePartners = dynamic(() => import("@components/home/partners"), { ssr: false });
 const HomeAbout = dynamic(() => import("@components/home/about"), { ssr: false });
 const HomeExpertise = dynamic(() => import("@components/home/expertise"), { ssr: false });

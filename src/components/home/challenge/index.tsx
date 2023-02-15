@@ -18,7 +18,7 @@ const HomeChallenge: FC = () => {
             <Container>
                 <Grid
                     container
-                    spacing={4}
+                    spacing={3}
                     direction="row"
                     justifyContent="center">
                     <Grid

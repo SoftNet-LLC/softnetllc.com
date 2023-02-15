@@ -20,7 +20,7 @@ const HomeExpertise: FC = () => {
             <Container>
                 <Grid
                     container
-                    spacing={4}
+                    spacing={3}
                     justifyContent="center">
                     <Grid
                         lg={12}

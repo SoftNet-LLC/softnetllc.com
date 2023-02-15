@@ -3,6 +3,7 @@
  */
 
 const { withPlugins, extend } = require("next-compose-plugins");
+const withTM = require("next-transpile-modules")(["three"])
 const optimizedImages = require("next-optimized-images");
 const runtimeCaching = require("next-pwa/cache");
 const withPwa = require("next-pwa")({
@@ -14,15 +15,12 @@ const withPwa = require("next-pwa")({
 })
 
 
-const baseConfig = {
+const baseConfig = withTM({
     reactStrictMode: false,
-    images: {
-        unoptimized: true,
-    },
     swcMinify: true,
     env: {
     }
-};
+});
 
 
 module.exports = baseConfig
