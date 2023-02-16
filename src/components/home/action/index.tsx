@@ -34,7 +34,7 @@ const HomeAction: FC = () => {
                             <ActionButton
                                 color="secondary"
                                 variant="contained">
-                                Start conversation
+                                Get a free estimate
                             </ActionButton>
                         </Stack>
                     </Grid>

@@ -94,7 +94,7 @@ const LandingHeader: FC = () => {
                                         onClick={() => {
                                             router.push("/conversation")
                                         }}>
-                                        Conversation Now
+                                        Free Estimate
                                     </Button>
                                 </Stack>
                             )
@@ -142,7 +142,7 @@ const LandingHeader: FC = () => {
                                         onClick={() => {
                                             router.push("/conversation")
                                         }}>
-                                        Conversation Now
+                                        Get a free estimate
                                     </Button>
                                 </Stack>
                             </div>

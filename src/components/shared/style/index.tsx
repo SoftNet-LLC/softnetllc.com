@@ -22,6 +22,11 @@ const GlobalStyle = () => {
                 //color: #000!important;
                 //box-shadow: none!important;
               }
+
+              a {
+                color: #B31942;
+                font-weight: 500;
+              }
             `}
         />
     );

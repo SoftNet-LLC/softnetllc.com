@@ -42,7 +42,7 @@ const HomeBlogs: FC = () => {
                             variant="contained"
                             color="secondary"
                             id='home-blog-button'>
-                            Read More blogs
+                            Read More
                         </ActionButton>
                     </Grid>
                 </Grid>

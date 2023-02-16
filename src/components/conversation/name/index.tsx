@@ -19,7 +19,7 @@ const ConversationName: FC = () => {
                     title={
                         <>
                             <h3>
-                            Why we need your name?
+                                Why we need your name?
                             </h3>
                             <p>
                                 We need your name because we will need to register your name.
