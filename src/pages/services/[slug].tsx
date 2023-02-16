@@ -17,7 +17,7 @@ const ServicePage: NextPage = () => {
         title: "Blogs - SoftNet.LLC",
         description: "Web & Mobile app development services in United State.",
         image: {
-            url: "/softnetllc.jpg",
+            url: "/softnetllc.png",
             width: 1000,
             height: 510
         },

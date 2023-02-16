@@ -24,9 +24,9 @@ const pageSeo: SeoProps = {
     title: "Register - SoftNet.LLC",
     description: "Web & Mobile app development services in United State.",
     image: {
-        url: "/softnetllc.jpg",
-        width: 1000,
-        height: 510
+        url: "/softnetllc.png",
+        width: 1448,
+        height: 853
     },
     keywords: [
         "SoftNet",
