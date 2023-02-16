@@ -120,7 +120,7 @@ const HomeHero: FC = () => {
                                 <Grid
                                     xs={12}>
                                     <H1 color="light" id="home-hero-title">
-                                        Start your project with the SoftNet.LLC
+                                        Software solutions for your business.
                                     </H1>
                                 </Grid>
                                 <Grid
@@ -131,9 +131,8 @@ const HomeHero: FC = () => {
                                         style={{
                                             marginBottom: 32
                                         }}>
-                                        Full-stack design, development & support
-                                        with experience of over 500 delivering web
-                                        and mobile apps.
+                                        Full-stack web, mobile, and application design, development & support.
+                                        Over 1,000 successful projects completed.
                                     </P1>
                                 </Grid>
                                 <Grid
@@ -146,7 +145,7 @@ const HomeHero: FC = () => {
                                         size="large"
                                         id="home-hero-btn1"
                                         fullWidth>
-                                        Start Conversation
+                                        Get started!
                                     </ActionButton>
                                 </Grid>
                                 <Grid
@@ -160,7 +159,7 @@ const HomeHero: FC = () => {
                                         className="light"
                                         id="home-hero-btn2"
                                         fullWidth>
-                                        Learn More Services
+                                        All of our Services
                                     </ActionButton>
                                 </Grid>
                             </Grid>

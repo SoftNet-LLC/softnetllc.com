@@ -25,7 +25,7 @@ const HomeChallenge: FC = () => {
                         lg={12}
                         xs={12}>
                         <H2 id='home-challenge-title'>
-                            Passionate <mark>tech challenges</mark>
+                            We've got <mark>your back</mark>
                         </H2>
                     </Grid>
 
@@ -35,11 +35,8 @@ const HomeChallenge: FC = () => {
                         sm={6}
                         xs={12}>
                         <P1 id='home-challenge-content1'>
-                            We strive for <b> excellence </b> for all our
-                            customers. To achieve this, we proceed in the most
-                            pragmatic way possible in complete transparency with
-                            you and your teams throughout the development
-                            process.
+                            We stand behind all of our work. <br/><mark>Support</mark> is always just one message, or phone call away!                             
+                            
                         </P1>
                     </Grid>
                 </Grid>

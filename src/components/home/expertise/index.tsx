@@ -1,4 +1,5 @@
 import React, { FC, useEffect } from "react";
+import Link from "next/link";
 import { Container } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2"
 import gsap from "gsap";
@@ -7,6 +8,8 @@ import { H2 } from "@components/shared/heading";
 import { P1 } from "@components/shared/paragraph";
 import { ActionButton } from "@components/shared/button";
 import HomeExpertiseWrap from "./style/wrap";
+import BootstrapTooltip from "@components/shared/tooltip";
+
 
 
 const HomeExpertise: FC = () => {
@@ -26,7 +29,7 @@ const HomeExpertise: FC = () => {
                         lg={12}
                         xs={12}>
                         <H2 id="home-expertise-title">
-                            Our expertise
+                            Development is our passion.
                         </H2>
                     </Grid>
 
@@ -36,11 +39,10 @@ const HomeExpertise: FC = () => {
                         sm={12}
                         xs={12}>
                         <P1 id="home-expertise-content1">
-                            We design, develop and maintain high-performance web
-                            and mobile applications that can address{" "}
-                            <b> complex business and technical issues</b>. We
-                            set up cloud architectures that can scale to several
-                            hundred thousand users.
+                        We design, develop and maintain high-performance web and mobile applications.<br/>
+                        From high-speed, SEO optimized websites to Python web scraping and custom data analysis tools, we do it all.
+                        If you can dream it, <mark>we can build it.</mark> 
+                            <br/> Please see a complete list of <Link href="/services">our services</Link>
                         </P1>
                     </Grid>
                     <Grid
@@ -53,7 +55,7 @@ const HomeExpertise: FC = () => {
                             id="home-expertise-button"
                             variant="contained"
                             color="secondary">
-                            Discuss Project
+                            Discuss a Project
                         </ActionButton>
                     </Grid>
                 </Grid>

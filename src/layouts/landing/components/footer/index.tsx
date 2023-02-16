@@ -48,8 +48,8 @@ const LandingFooter: FC = () => {
                                         padding: 8,
                                         marginTop: 16,
                                     }}>
-                                    Softnet.llc is the industry that is providing the
-                                    IT services
+                                    Softnet Technolology LLC is a software development agency located in Olympia, Washington. <br/><br/> We are experts
+                                    in web, mobile, and application development.
                                 </P2>
 
                                 <Stack direction="row">
@@ -89,7 +89,7 @@ const LandingFooter: FC = () => {
                             </div>
 
                             <div>
-                                <h3>Main Links</h3>
+                                <h3>About Us</h3>
                                 <Link
                                     href="/"
                                     className="nav-link">
@@ -99,7 +99,7 @@ const LandingFooter: FC = () => {
                                 <Link
                                     href="/"
                                     className="nav-link">
-                                    Questions & Answers
+                                    FAQ
                                 </Link>
 
                                 <Link
@@ -116,7 +116,7 @@ const LandingFooter: FC = () => {
                             </div>
 
                             <div>
-                                <h3>Services</h3>
+                                <h3>More Info</h3>
 
                                 <Link
                                     href="/"
@@ -127,7 +127,7 @@ const LandingFooter: FC = () => {
                                 <Link
                                     href="/"
                                     className="nav-link">
-                                    Conversation
+                                    Start a Project
                                 </Link>
 
                                 <Link
@@ -150,7 +150,7 @@ const LandingFooter: FC = () => {
                             </div>
 
                             <div>
-                                <h3>About Us</h3>
+                                <h3>Legal</h3>
 
                                 <Link
                                     href="/"
@@ -191,7 +191,7 @@ const LandingFooter: FC = () => {
                                 marginTop: 12,
                                 marginBottom: 12,
                             }}>
-                            Softnet.llc is the industry that is providing the IT services
+                            Softnet Technolology LLC is a software development agency located in Olympia, Washington.
                         </P2>
                         <Stack direction="row">
                             <IconButton

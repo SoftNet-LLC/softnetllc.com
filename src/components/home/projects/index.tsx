@@ -24,10 +24,10 @@ const HomeProjects: FC = () => {
                     container>
                     <Grid xs={12}>
                         <H2 id="home-project-title">
-                            Make it with <mark>Softnet.llc</mark>
+                            Beautiful <mark>web design.</mark>
                         </H2>
                         <P1 id="home-project-subtitle">
-                            Get some Inspirations from 1800+ skills
+                            See some of our work.
                         </P1>
                     </Grid>
 
