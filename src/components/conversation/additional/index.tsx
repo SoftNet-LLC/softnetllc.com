@@ -19,7 +19,7 @@ const ConversationAdditional: FC = () => {
                 style={{ marginBottom: 42 }}
                 className="talk">
                 <i>
-                    If yes, please check box the box below. If not, click finish.
+                    If yes, please check the box below. If not, click finish.
                 </i>
             </P1>
 
