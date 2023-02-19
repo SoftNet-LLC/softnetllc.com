@@ -11,20 +11,20 @@ const ConversationFinish: FC = () => {
     return (
         <div>
             <P1 className="talk">
-                <i>💬 Thank you very much</i>
+                <i>💬 That's it! You're all done.</i>
             </P1>
             <P1 className="talk">
-                <i><b>Thanks</b> for using our service.</i>
+                <i><b>Your Inquiry</b> has been submitted...</i>
             </P1>
             <P1 className="talk">
                 <i>
-                    We will response you as soon as possible. Normally, we respond for all request in a day.
+                    We will reply as soon as possible.
                 </i>
             </P1>
 
             <P1 className="talk">
                 <i>
-                    Do you want to create an account on our management system?
+                    Would you like to create an account for management and progress-tracking on our system?
                 </i>
             </P1>
 

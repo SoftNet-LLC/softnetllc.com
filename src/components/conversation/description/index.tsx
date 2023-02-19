@@ -15,10 +15,10 @@ const ConversationDescription: FC = () => {
                     title={
                         <>
                             <h3>
-                                What do you need to write?
+                                What should I say?
                             </h3>
                             <p>
-                                You can write short description that you want to get help from us.
+                                Write a description about your project.
                             </p>
                         </>
                     }
@@ -29,7 +29,7 @@ const ConversationDescription: FC = () => {
             <TextField
                 multiline
                 rows={5}
-                placeholder="Enter Your Project description"
+                placeholder="Enter Your Project description (or skip it)"
                 name="description"
                 id="description"
                 fullWidth/>

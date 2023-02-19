@@ -9,16 +9,15 @@ const ConversationFiles: FC = () => {
     return (
         <div>
             <H2>
-                If you have files, please share here
+                Do you have files to share?
                 <BootstrapTooltip
                     title={
                         <>
                             <h3>
-                                Why we need your name?
+                                Accepted file formats?
                             </h3>
                             <p>
-                                We need your name because we will need to register your name.
-                                Please let us know your name by write your full name.
+                                Please upload ONLY JPG, JPEG, PNG, or PDF files
                             </p>
                         </>
                     }

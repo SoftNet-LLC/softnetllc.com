@@ -25,7 +25,7 @@ const ContactForm: FC = () => {
                         xs={12}>
                         <div className="contact-form-card">
                             <H2>Contact Us</H2>
-                            <P3> If you have any questions or request, please write here. We will respond you in 1 day.</P3>
+                            <P3>Have questions? Need to get in touch?</P3>
                             <Grid
                                 container
                                 spacing={5}>
@@ -49,8 +49,9 @@ const ContactForm: FC = () => {
                                         <Select
                                             id="subject"
                                             name="subject">
-                                            <MenuItem value={"general"}>General</MenuItem>
-                                            <MenuItem value={"start"}>I wanna start a project</MenuItem>
+                                            <MenuItem value={"general"}>General Inquiry/question</MenuItem>
+                                            <MenuItem value={"start"}>I want an estimate for my project/idea</MenuItem>
+                                            <MenuItem value={"start"}>I need support for a completed project</MenuItem>
                                         </Select>
                                     </FormControl>
                                 </Grid>
@@ -70,7 +71,7 @@ const ContactForm: FC = () => {
                                         color="info"
                                         fullWidth={false}
                                         variant="contained">
-                                        Submit Contact
+                                        Submit
                                     </ActionButton>
                                 </Grid>
                             </Grid>

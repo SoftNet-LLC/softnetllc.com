@@ -19,11 +19,11 @@ const ConversationEmail: FC = () => {
                     title={
                         <>
                             <h3>
-                                Why we need your name?
+                                Why do we need your email?
                             </h3>
                             <p>
-                                We need your name because we will need to register your name.
-                                Please let us know your name by write your full name.
+                                Communication is the key to success.<br/>
+                                So, we must be able to contact you.
                             </p>
                         </>
                     }

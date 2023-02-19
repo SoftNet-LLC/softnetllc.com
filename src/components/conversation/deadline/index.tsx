@@ -25,15 +25,15 @@ const ConversationDeadline: FC = () => {
     return (
         <div>
             <H2>
-                What about your expectation for completing
+                How soon do you need it completed?
                 <BootstrapTooltip
                     title={
                         <>
                             <h3>
-                                What do you need to write?
+                                Why?
                             </h3>
                             <p>
-                                You can write short description that you want to get help from us.
+                                Urgency helps us to allocate our personnel.
                             </p>
                         </>
                     }
@@ -42,20 +42,20 @@ const ConversationDeadline: FC = () => {
                 </BootstrapTooltip>
             </H2>
             <FormControl>
-                <Label htmlFor="deadline">*Your expectation for deadline</Label>
+                <Label htmlFor="deadline">* Your expectation for deadline</Label>
                 <RadioGroup
                     aria-labelledby="deadline"
                     name="deadline"
                     value={value}
                     onChange={handleChange}>
-                    <FormControlLabel value="d" control={<Radio />} label="In a week" />
+                    <FormControlLabel value="d" control={<Radio />} label="1 week" />
                     <FormControlLabel value="w" control={<Radio />} label="1 - 2 weeks" />
-                    <FormControlLabel value="m" control={<Radio />} label="In a month" />
+                    <FormControlLabel value="m" control={<Radio />} label="1  month" />
                     <FormControlLabel value="mm" control={<Radio />} label="1 - 2 month" />
                     <FormControlLabel value="mmm" control={<Radio />} label="2 - 6 months" />
                     <FormControlLabel value="y" control={<Radio />} label="6 months - 1 year" />
                     <FormControlLabel value="yy" control={<Radio />} label="1 year+" />
-                    <FormControlLabel value="cu" control={<Radio />} label="I want to write custom" />
+                    <FormControlLabel value="cu" control={<Radio />} label="custom" />
                     <FormControlLabel value="no" control={<Radio />} label="I don't know" />
                 </RadioGroup>
             </FormControl>

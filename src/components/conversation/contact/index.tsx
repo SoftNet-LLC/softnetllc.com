@@ -23,16 +23,16 @@ const ConversationContacts: FC = () => {
     return (
         <div>
             <H2>
-                Add more contacts to get our response
+                Would you like to add more contacts?
                 <BootstrapTooltip
                     title={
                         <>
                             <h3>
-                                Why we need your name?
+                                What is this?
                             </h3>
                             <p>
-                                We need your name because we will need to register your name.
-                                Please let us know your name by write your full name.
+                                You can add more contacts to receive our reply.
+                                For example, your co-founder or business partner.
                             </p>
                         </>
                     }
@@ -58,11 +58,14 @@ const ConversationContacts: FC = () => {
                                     placeholder="Select Role"
                                     id={`subject-${i.id}`}
                                     name={`subject-${i.id}`}>
-                                    <MenuItem value={"owner"}>OWNER</MenuItem>
+                                    <MenuItem value={"owner"}>Founder/Owner</MenuItem>
+                                    <MenuItem value={"co-founder"}>Co-Founder</MenuItem>
+                                    <MenuItem value={"partner"}>Business Partner</MenuItem>
                                     <MenuItem value={"cto"}>CTO</MenuItem>
                                     <MenuItem value={"ceo"}>CEO</MenuItem>
                                     <MenuItem value={"manager"}>Manager</MenuItem>
                                     <MenuItem value={"developer"}>Developer</MenuItem>
+                                    <MenuItem value={"other"}>Other</MenuItem>
                                 </Select>
                             </Grid>
                             <Grid lg={4}>
@@ -110,7 +113,7 @@ const ConversationContacts: FC = () => {
                         }}
                         size="large">
                         <AddOutlined/>
-                        Add More Contact
+                        Add More Contacts
                     </Button>
                 </Grid>
             </Grid>

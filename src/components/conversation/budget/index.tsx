@@ -15,15 +15,15 @@ const ConversationBudget: FC = () => {
     return (
         <div>
             <H2>
-                How much budget do you have for the development
+                What is your budget for this project?
                 <BootstrapTooltip
                     title={
                         <>
                             <h3>
-                                What do you need to write?
+                                Why do we ask this?
                             </h3>
                             <p>
-                                You can write short description that you want to get help from us.
+                                Your budget gives us an idea of the project scope.
                             </p>
                         </>
                     }
@@ -38,13 +38,15 @@ const ConversationBudget: FC = () => {
                     name="budget"
                     value={value}
                     onChange={handleChange}>
-                    <FormControlLabel value="$" control={<Radio />} label="0 - $5,000" />
-                    <FormControlLabel value="$$" control={<Radio />} label="$5,000 - $10,000" />
-                    <FormControlLabel value="$$$" control={<Radio />} label="$10,000 - $30,000" />
-                    <FormControlLabel value="$$$$" control={<Radio />} label="$30,000 - $60,000" />
-                    <FormControlLabel value="$$$$$" control={<Radio />} label="$60,000 - $120,000" />
-                    <FormControlLabel value="$$$$$$" control={<Radio />} label="$120,000+" />
-                    <FormControlLabel value="no" control={<Radio />} label="I don't know" />
+                    <FormControlLabel value="$" control={<Radio />} label="$500 - $700" />
+                    <FormControlLabel value="$$" control={<Radio />} label="$800 - $1,500" />
+                    <FormControlLabel value="$$$" control={<Radio />} label="$1,600 - $5,000" />
+                    <FormControlLabel value="$$$$" control={<Radio />} label="$5,000 - $10,000" />
+                    <FormControlLabel value="$$$$$" control={<Radio />} label="$10,000 - $30,000" />
+                    <FormControlLabel value="$$$$$$" control={<Radio />} label="$30,000 - $60,000" />
+                    <FormControlLabel value="$$$$$$$" control={<Radio />} label="$60,000 - $120,000" />
+                    <FormControlLabel value="$$$$$$$$" control={<Radio />} label="$120,000+" />
+                    <FormControlLabel value="no" control={<Radio />} label="I don't know yet" />
                 </RadioGroup>
             </FormControl>
             <Stack
