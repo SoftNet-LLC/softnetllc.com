@@ -25,16 +25,16 @@ const ConversationLinks: FC = () => {
     return (
         <div>
             <H2>
-                Add reference links to help us understand
+                Add links of websites/apps that you like
                 <BootstrapTooltip
                     title={
                         <>
                             <h3>
-                                Why we need your name?
+                                Why?
                             </h3>
                             <p>
-                                We need your name because we will need to register your name.
-                                Please let us know your name by write your full name.
+                                By showing us website that you like, it can help us
+                                get an understanding of the style you want for your project.
                             </p>
                         </>
                     }
@@ -43,11 +43,12 @@ const ConversationLinks: FC = () => {
                 </BootstrapTooltip>
             </H2>
             <P3 style={{ color: "#888" }}>
-                <i>Example: Name - Hosting  ||  Address - https://aws.amazon.com</i>
+                <i>Examples: <br/>Live Science  |  https://livescience.com</i>
+                <i><br/>How To Geek  |  https://howtogeek.com</i>
             </P3>
-            <P3 style={{ marginBottom:32, color: "#888" }}>
-                <i>Example: Name - Website  ||  Address - https://www.softnetllc.com</i>
-            </P3>
+            {/* <P3 style={{ marginBottom:32, color: "#888" }}>
+                <i>Example: NASA  /  https://nasa.gov</i>
+            </P3> */}
 
             <Grid
                 style={{ width: "100%" }}

@@ -11,7 +11,7 @@ const ConversationAdditional: FC = () => {
         <div>
             <P1 className="talk">
                 <i>
-                    Do you want to add more details such files or reference links?
+                    Do you want to add more details such as files or reference links?
                 </i>
             </P1>
 
@@ -19,7 +19,7 @@ const ConversationAdditional: FC = () => {
                 style={{ marginBottom: 42 }}
                 className="talk">
                 <i>
-                    If yes, please check below checkbox. If not, click finish
+                    If yes, please check the box below. If not, click finish.
                 </i>
             </P1>
 

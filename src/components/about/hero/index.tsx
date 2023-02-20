@@ -16,12 +16,9 @@ const AboutHero: FC = () => {
                     container>
                     <Grid lg={8}>
                         <div className="hero-wrap">
-                            <H1>About Software on Network</H1>
+                            <H1>We build software.</H1>
                             <P2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae urna sit amet enim
-                                fermentum efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                                posuere cubilia curae; Etiam ac lorem arcu. Phasellus ultrices justo at ipsum varius
-                                sodales.
+                                A team of talented developers who are dedicated to brining your project to life.
                             </P2>
                             <ActionButton
                                 variant="outlined"
@@ -29,14 +26,14 @@ const AboutHero: FC = () => {
                                 className="light"
                                 size="large"
                                 id="home-hero-btn1">
-                                Start With Us
+                                Talk with us
                             </ActionButton>
                         </div>
                     </Grid>
                     <Grid lg={4}>
                         <div className="video-wrap">
                             <video
-                                src="https://media.istockphoto.com/id/484583630/video/financial-data-and-charts-dolly-in-loopable-white-black.mp4?s=mp4-640x640-is&k=20&c=F3Ct5oBlyZfdo7qps1tEhZDyWrie8c6atHQifgZWNeQ="
+                                src="/temp/data-encrypting.mp4"
                                 muted
                                 loop
                                 autoPlay/>

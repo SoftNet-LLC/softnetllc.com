@@ -12,12 +12,12 @@ const ConversationWelcome: FC = () => {
                 <i>💬 Hi <b>{name}</b>,</i>
             </P1>
             <P1 className="talk">
-                <i><b>Thanks</b> for using our service.</i>
+                <i><b>Thanks</b> for considering us for your digital project.</i>
             </P1>
             <P1 className="talk">
                 <i>
-                    Please write to us to discuss your digital project.
-                    We need some <b>information</b> about your project to understand how we can help you.
+                    Let's quickly discuss your project.<br/>
+                    We need just a little <b>information</b> about your project...
                 </i>
             </P1>
 

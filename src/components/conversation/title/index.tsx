@@ -15,11 +15,11 @@ const ConversationTitle: FC = () => {
                     title={
                         <>
                             <h3>
-                            Why we need your name?
+                            Why?
                             </h3>
                             <p>
-                                We need your name because we will need to register your name.
-                                Please let us know your name by write your full name.
+                                Every good project starts with a name.<br/>
+                                Skip it, if you don't have one yet.
                             </p>
                         </>
                     }
@@ -29,7 +29,7 @@ const ConversationTitle: FC = () => {
             </H2>
             <Label htmlFor="title">Your Project Name</Label>
             <TextField
-                placeholder="Enter Your Project name"
+                placeholder="Enter Your Project name (or skip it)"
                 name="title"
                 id="title"
                 fullWidth/>

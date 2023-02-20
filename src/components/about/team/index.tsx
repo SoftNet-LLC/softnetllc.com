@@ -19,9 +19,10 @@ const AboutTeam: FC = () => {
                         xs={12}>
                         <H2>Who we are?</H2>
                         <P2>
-                            We are aware that the quality of our service depends first and foremost on the quality of our
-                            recruitment. Each developer has gone through a rigorous selection process that values technical
-                            potential, team spirit and a taste for customer service.
+                            The team at Softnet Technology is comprised of some of the best developers around the globe.<br/>
+                            Each developer is tested for talent & abilty across a number of skillsets including:<br/> technical ability,
+                            attention to detail, team spirit, and customer service.<br/><br/>
+                            <mark>You dream it. We build it.</mark>
                         </P2>
                     </Grid>
                     <Grid>

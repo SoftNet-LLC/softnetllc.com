@@ -19,10 +19,11 @@ const ConversationPhone: FC = () => {
                     title={
                         <>
                             <h3>
-                                Why phone number?
+                                Why do we need it?
                             </h3>
                             <p>
-                                If you allow us and email is no response, we will give you a call in a day.
+                                If you have an urgent request, we may contact you via Phone.<br/>
+                                We NEVER share or sell your information.
                             </p>
                         </>
                     }

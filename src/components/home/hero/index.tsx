@@ -101,10 +101,11 @@ const HomeHero: FC = () => {
                 <AnimationCanvas/>
             </Canvas>
             <Image
-                src={HOME_HERO}
+                // src={HOME_HERO}
+                src={"/temp/softnet-test1.jpg"}
                 width={1920}
                 height={1080}
-                placeholder="blur"
+                // placeholder="blur"
                 alt="Auth Image"/>
             <div className="overlay">
                 <Container>
