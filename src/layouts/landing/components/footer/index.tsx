@@ -32,24 +32,13 @@ const LandingFooter: FC = () => {
                                     direction="row"
                                     alignItems="center"
                                     spacing={2}>
-                                    <LogoLink href="/">
-                                        <Image
-                                            src={LOGO_LIGHT}
-                                            width="300"
-                                            height="235"
-                                            alt="SoftNet.LLC Logo"
-                                            placeholder="blur"/>
-                                    </LogoLink>
                                     <H2 color="light">SOFTNET.LLC</H2>
                                 </Stack>
-                                <P2
-                                    color="light"
-                                    style={{
-                                        padding: 8,
-                                        marginTop: 16,
-                                    }}>
-                                    Softnet Technolology LLC is a software development agency located in Olympia, Washington. <br/><br/> We are experts
-                                    in web, mobile, and application development.
+                                <P2 style={{ marginBottom: 8 }} color="light">
+                                    Softnet Technology LLC is a software development agency located in Olympia, Washington.
+                                </P2>
+                                <P2 style={{ marginBottom: 8 }} color="light">
+                                    We are experts in web, mobile, and application development.
                                 </P2>
 
                                 <Stack direction="row">
@@ -172,26 +161,18 @@ const LandingFooter: FC = () => {
                             direction="row"
                             alignItems="center"
                             spacing={2}>
-                            <LogoLink href="/">
-                                <Image
-                                    src={LOGO_LIGHT}
-                                    width="300"
-                                    height="235"
-                                    alt="SoftNet.LLC Logo"
-                                    placeholder="blur"/>
-                            </LogoLink>
-                            <H2 color="light">
+                            <H2
+                                color="light">
                                 SOFTNET.LLC
                             </H2>
                         </Stack>
                         <P2
                             color="light"
                             style={{
-                                padding: "8px",
                                 marginTop: 12,
                                 marginBottom: 12,
                             }}>
-                            Softnet Technolology LLC is a software development agency located in Olympia, Washington.
+                            Softnet Technology LLC is a software development agency located in Olympia, Washington.
                         </P2>
                         <Stack direction="row">
                             <IconButton

@@ -2,19 +2,12 @@ import React from "react";
 import { NextPage } from "next";
 import LandingLayout from "@layouts/landing";
 import { SeoProps } from "@utils/types/layout.type";
-import dynamic from "next/dynamic";
 import HomeHero from "@components/home/hero";
-const HomePartners = dynamic(() => import("@components/home/partners"), { ssr: false });
-const HomeAbout = dynamic(() => import("@components/home/about"), { ssr: false });
-const HomeExpertise = dynamic(() => import("@components/home/expertise"), { ssr: false });
-const HomeProjects = dynamic(() => import("@components/home/projects"), { ssr: false });
-const HomeChallenge = dynamic(() => import("@components/home/challenge"), { ssr: false });
-const HomeBlogs = dynamic(() => import("@components/home/blogs"), { ssr: false });
-const HomeAction = dynamic(() => import("@components/home/action"), { ssr: false });
+import HomeGallery from "@components/home/gallery";
 
 const pageSeo: SeoProps = {
-    title: "Home - SoftNet.LLC",
-    description: "Web & Mobile app development services in United State.",
+    title: "Web & Mobile App Development Services | SoftNet.LLC",
+    description: "SoftNet.LLC is a leading provider of custom web and mobile app development services worldwide. We specialize in creating innovative software solutions tailored to your specific needs, using cutting-edge technologies to deliver exceptional user experiences that drive business results. Contact us today to learn more about how we can help you achieve your goals with custom software development.",
     image: {
         url: "/softnetllc.png",
         width: 1448,
@@ -40,13 +33,7 @@ const HomePage: NextPage = () => {
     return (
         <LandingLayout seo={pageSeo}>
             <HomeHero/>
-            <HomePartners/>
-            <HomeAbout/>
-            <HomeExpertise/>
-            <HomeProjects/>
-            <HomeChallenge/>
-            <HomeBlogs/>
-            <HomeAction/>
+            <HomeGallery/>
         </LandingLayout>
     );
 };

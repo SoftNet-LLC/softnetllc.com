@@ -7,7 +7,7 @@ const ActionButton = styled(Button)`
     min-width: 250px;
 
     &.light {
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(2px);
         border-width: 1px;
         color: #ffffff;
         border-color: #ffffff;

@@ -2,18 +2,19 @@ import styled from "@emotion/styled";
 
 
 const FooterWrap = styled.footer`
-  padding: 90px 0 0;
-  background-color: #1f1f1f;
-  
+  padding: 50px 0 0;
+  background-color: #0e0e0e;
+  border-top: 1px solid #1f1f1f;
+
   img {
-    width: 51px;
+    width:60px;
     height: auto;
   }
 
   h2 {
     font-size: 24px;
   }
-  
+
   p {
     color: #aaa;
   }
@@ -35,15 +36,17 @@ const FooterWrap = styled.footer`
     display: block;
     margin-bottom: 20px;
   }
-  
-  .copy-right{
+
+  .copy-right {
     padding: 20px 12px;
+
     p {
       margin: 0;
       text-transform: uppercase;
       font-size: 10px;
       color: #aaaaaa;
       line-height: 1.5;
+
       a {
         color: #f0f0f0;
         text-decoration: none;
@@ -52,7 +55,11 @@ const FooterWrap = styled.footer`
   }
 
   ${({ theme }: any) => `${theme.breakpoints.down("lg")} {
-    padding: 50px 0 0;
+    .copy-right {
+      p {
+        text-align: center;
+      }
+    }
   }`}
 `;
 

@@ -2,21 +2,21 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
     typography: {
-        fontFamily: ["IBM Plex Mono", "sans-serif"].join(","),
+        fontFamily: ["Roboto Mono", "monospace"].join(","),
     },
 
     palette: {
         primary: {
-            main: "#000000",
-            light: "#000000",
-            dark: "#000000",
-            contrastText: "#FFFFFF"
+            main: "#e32652",
+            light: "#e32652",
+            dark: "#e32652",
+            contrastText: "#ffffff"
         },
         secondary: {
-            main: "#B31942",
-            light: "#B31942",
-            dark: "#B31942",
-            contrastText: "#FFFFFF",
+            main: "#e0e0e0",
+            light: "#e0e0e0",
+            dark: "#e0e0e0",
+            contrastText: "#1f1f1f",
         },
         success: {
             main: "#006A00",
@@ -53,14 +53,18 @@ const theme = createTheme({
         MuiButton: {
             defaultProps: {
                 sx: {
-                    borderRadius: 0,
+                    borderRadius: "6px",
+                    borderWidth: "1px",
+                    fontWeight: 700,
+                    letterSpacing: "0.3px"
                 },
             },
         },
         MuiAppBar: {
             defaultProps: {
                 sx: {
-                    backgroundColor: "#fff",
+                    position: "relative",
+                    backgroundColor: "#0e0e0e",
                     boxShadow: "none",
                     borderBottom: "1px solid rgba(0, 0, 0, 0.15)",
                 },

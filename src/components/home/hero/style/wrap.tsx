@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const HomeHeroWrap = styled.section`
-  height: calc(100vh - 37px);
+  height: 600px;
   width: 100%;
   padding-top: 54px;
   position: relative;

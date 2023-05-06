@@ -7,7 +7,6 @@ import { P1 } from "@components/shared/paragraph";
 import { H1 } from "@components/shared/heading";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Container } from "@mui/material";
-import Image from "next/image";
 import { HOME_HERO } from "@assets/images";
 
 const Points = () => {
@@ -48,7 +47,7 @@ const Points = () => {
             for (let zi = 0; count > zi; zi++) {
                 let x = sep * (xi - count / 2);
                 let z = sep * (zi - count / 2);
-                positions[i+1] = graph(x, z);
+                positions[i + 1] = graph(x, z);
                 i += 3;
             }
         }
@@ -66,7 +65,7 @@ const Points = () => {
                         ref={bufferRef}
                         attach="attributes-position"
                         array={positions}
-                        count={positions.length/3}
+                        count={positions.length / 3}
                         itemSize={3}/>
                 </bufferGeometry>
                 <pointsMaterial
@@ -100,13 +99,6 @@ const HomeHero: FC = () => {
             <Canvas camera={{ position: [0, 20, 100] }}>
                 <AnimationCanvas/>
             </Canvas>
-            <Image
-                // src={HOME_HERO}
-                src={"/temp/softnet-test1.jpg"}
-                width={1920}
-                height={1080}
-                // placeholder="blur"
-                alt="Auth Image"/>
             <div className="overlay">
                 <Container>
                     <Grid container>
@@ -120,7 +112,10 @@ const HomeHero: FC = () => {
                                 spacing={2}>
                                 <Grid
                                     xs={12}>
-                                    <H1 color="light" id="home-hero-title">
+                                    <H1
+                                        style={{ letterSpacing: -0.1 }}
+                                        color="light"
+                                        id="home-hero-title">
                                         Software solutions for your business.
                                     </H1>
                                 </Grid>
@@ -130,10 +125,12 @@ const HomeHero: FC = () => {
                                         color="light"
                                         id="home-hero-subtitle"
                                         style={{
-                                            marginBottom: 32
+                                            marginBottom: 32,
                                         }}>
-                                        Full-stack web, mobile, and application design, development & support.
-                                        Over 1,000 successful projects completed.
+                                        Discover the power of custom software solutions for your business with
+                                        SoftNet.LLC. Our full-stack web, mobile, and application design and development
+                                        services are tailored to your unique needs, providing ongoing support to ensure
+                                        optimal performance.
                                     </P1>
                                 </Grid>
                                 <Grid
@@ -142,7 +139,7 @@ const HomeHero: FC = () => {
                                     <ActionButton
                                         href="/conversation"
                                         variant="contained"
-                                        color="secondary"
+                                        color="primary"
                                         size="large"
                                         id="home-hero-btn1"
                                         fullWidth>

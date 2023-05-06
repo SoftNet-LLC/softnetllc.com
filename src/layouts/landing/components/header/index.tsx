@@ -32,7 +32,7 @@ const LandingHeader: FC = () => {
 
 
     return (
-        <AppBar style={{ borderBottom: "1px solid #B31942" }} color="transparent">
+        <AppBar color="transparent">
             <Container>
                 <HeaderWrap>
                     <Stack
@@ -40,17 +40,20 @@ const LandingHeader: FC = () => {
                         justifyContent="space-between"
                         alignItems="center">
                         <LogoLink href="/">
-                            <Image
-                                src={LOGO}
-                                width={300}
-                                height={235}
-                                alt="SoftNet.LLC Logo"
-                                placeholder="blur"/>
+                            <div style={{
+                                color: "#ffffff",
+                                fontSize: 32,
+                                fontWeight: 700,
+                                letterSpacing: 2 }}>
+                                <span style={{ color: "#e32652", fontFamily: "'Big Shoulders Text', cursive" }}>S</span>
+                                <span style={{ letterSpacing: 0, fontFamily: "'Big Shoulders Text', cursive" }}>nT</span>
+                            </div>
                         </LogoLink>
                         {
                             bkp === "mob" ? (
                                 <Stack direction="row" spacing={2}>
                                     <Button
+                                        style={{ color: "#ffffff" }}
                                         color="secondary"
                                         variant="text"
                                         href="tel:(253) 533-2244">
@@ -60,7 +63,7 @@ const LandingHeader: FC = () => {
                                     <IconButton
                                         size="large"
                                         edge="start"
-                                        color="inherit"
+                                        color="secondary"
                                         aria-label="menu"
                                         sx={{ mr: 2 }}
                                         onClick={() => {
@@ -79,7 +82,7 @@ const LandingHeader: FC = () => {
                                         (253) 533-2244
                                     </Button>
                                     <Button
-                                        color="primary"
+                                        color="secondary"
                                         variant="outlined"
                                         onClick={() => {
                                             router.push("/login")
@@ -89,7 +92,7 @@ const LandingHeader: FC = () => {
                                     <Button
                                         id="conversation"
                                         className="header-action"
-                                        color="secondary"
+                                        color="primary"
                                         variant="contained"
                                         onClick={() => {
                                             router.push("/conversation")

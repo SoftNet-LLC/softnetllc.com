@@ -1,5 +1,5 @@
 /**
- * @type {import('next').NextConfig}
+ * @type {import("next").NextConfig}
  */
 
 const { withPlugins, extend } = require("next-compose-plugins");
@@ -15,14 +15,15 @@ const withPwa = require("next-pwa")({
 })
 
 
-const baseConfig = withPwa(withTM({
+const baseConfig = withTM(withPlugins([
+    optimizedImages
+], {
     reactStrictMode: false,
     swcMinify: true,
     images: {
-        unoptimized: true,
+        formats: ["image/avif", "image/webp"],
     },
-    env: {
-    }
+    env: {}
 }));
 
 

@@ -4,11 +4,14 @@ const GlobalStyle = () => {
     return (
         <Global
             styles={css`
-
               * {
                 padding: 0;
                 margin: 0;
                 box-sizing: border-box;
+              }
+              
+              body {
+                background: #000;
                 font-family: 'IBM Plex Mono', monospace;
               }
 
@@ -16,15 +19,13 @@ const GlobalStyle = () => {
                 max-width: 100%;
                 height: auto;
               }
-
-              .header-action {
-                //background-color: #F6E009 !important;
-                //color: #000!important;
-                //box-shadow: none!important;
+              
+              h1, h2, h3, h4, h5, h6 {
+                font-family: 'Big Shoulders Text', cursive;
+                font-weight: 500;
               }
 
               a {
-                color: #B31942;
                 font-weight: 500;
               }
             `}
