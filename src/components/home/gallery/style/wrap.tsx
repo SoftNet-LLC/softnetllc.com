@@ -4,24 +4,35 @@ const HomeGalleryWrap = styled.section`
   padding: 52px 0;
   overflow: hidden;
   
+  img {
+    opacity: .6;
+    transition: all .5s;
+    
+    :hover {
+      opacity: .8;
+      transition: all .5s;
+    }
+  }
+  
   .gallery {
     animation: marquee 30s linear infinite;
     animation-delay: 1s;
-    @keyframes marquee {
-      0% {
-        transform: translate(-100%, 0);
-      }
-      100% {
-        transform: translate(0, 0);
+    display: grid;
+    grid-template-columns: repeat(20, 384px);
+    gap: 16px;
+    .gallery-item {
+      width: 384px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      img {
+        :last-child {
+          transform: translateX(-197px);
+        }
       }
     }
     
-    :last-child {
-      animation: marquee1 30s linear infinite;
-      animation-delay: 1s;
-    }
-
-    @keyframes marquee1 {
+    @keyframes marquee {
       0% {
         transform: translate(0, 0);
       }

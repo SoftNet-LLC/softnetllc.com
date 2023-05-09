@@ -17,6 +17,7 @@
     "@react-spring/three": "^9.6.1",
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.0",
+    "dotted-map": "^2.2.3",
     "effector": "^22.5.0",
     "effector-react": "^22.4.0",
     "gsap": "^3.11.4",

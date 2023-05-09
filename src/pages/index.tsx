@@ -4,6 +4,7 @@ import LandingLayout from "@layouts/landing";
 import { SeoProps } from "@utils/types/layout.type";
 import HomeHero from "@components/home/hero";
 import HomeGallery from "@components/home/gallery";
+import HomeChallenge from "@components/home/challenge";
 
 const pageSeo: SeoProps = {
     title: "Web & Mobile App Development Services | SoftNet.LLC",
@@ -34,6 +35,7 @@ const HomePage: NextPage = () => {
         <LandingLayout seo={pageSeo}>
             <HomeHero/>
             <HomeGallery/>
+            <HomeChallenge/>
         </LandingLayout>
     );
 };
