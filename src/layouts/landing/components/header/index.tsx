@@ -40,11 +40,12 @@ const LandingHeader: FC = () => {
                         justifyContent="space-between"
                         alignItems="center">
                         <LogoLink href="/">
-                            <div style={{
-                                color: "#ffffff",
-                                fontSize: 32,
-                                fontWeight: 700,
-                                letterSpacing: 2 }}>
+                            <div
+                                style={{
+                                    color: "#ffffff",
+                                    fontSize: 32,
+                                    fontWeight: 700,
+                                    letterSpacing: 2 }}>
                                 <span style={{ color: "#e32652", fontFamily: "'Big Shoulders Text', cursive" }}>S</span>
                                 <span style={{ letterSpacing: 0, fontFamily: "'Big Shoulders Text', cursive" }}>nT</span>
                             </div>

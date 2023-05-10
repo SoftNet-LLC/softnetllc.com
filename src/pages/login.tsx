@@ -98,6 +98,7 @@ const LoginPage: NextPage = () => {
                                     <InputAdornment
                                         position="end">
                                         <IconButton
+                                            color="secondary"
                                             aria-label="toggle password"
                                             onClick={handleClickShowPassword}
                                             onMouseDown={handleMouseDownPassword}
@@ -115,7 +116,7 @@ const LoginPage: NextPage = () => {
                     <Grid xs={4}>
                         <P3>
                             <FormControlLabel
-                                control={<Checkbox/>}
+                                control={<Checkbox style={{ color: "#e0e0e0" }} color="primary"/>}
                                 label="Keep login"/>
                         </P3>
                     </Grid>
@@ -130,7 +131,7 @@ const LoginPage: NextPage = () => {
                     </Grid>
                     <Grid xs={12}>
                         <ActionButton
-                            color="secondary"
+                            color="primary"
                             variant="contained"
                             fullWidth
                             size="large">
@@ -138,13 +139,13 @@ const LoginPage: NextPage = () => {
                         </ActionButton>
                     </Grid>
                     <Grid xs={12}>
-                        <Divider>
+                        <Divider style={{ color: "#aaaaaa", borderColor: "#aaaaaa" }}>
                             Or
                         </Divider>
                     </Grid>
                     <Grid xs={6}>
                         <Button
-                            color="secondary"
+                            color="primary"
                             variant="outlined"
                             fullWidth
                             size="large">
@@ -154,7 +155,7 @@ const LoginPage: NextPage = () => {
                     </Grid>
                     <Grid xs={6}>
                         <Button
-                            color="secondary"
+                            color="primary"
                             variant="outlined"
                             fullWidth
                             size="large">

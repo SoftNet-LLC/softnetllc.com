@@ -1,10 +1,8 @@
 import React, { FC, Fragment } from "react";
 import AuthLayoutWrap from "./style/wrap";
 import { LayoutType } from "@utils/types/layout.type";
-import Link from "next/link";
-import Image from "next/image";
-import { AUTH_BG, LOGO } from "@assets/images";
 import SeoHead from "@components/shared/seo/head";
+import { LogoLink } from "@layouts/landing/components/header/style";
 
 const AuthLayout: FC<LayoutType> = (props) => {
     const { seo, children } = props
@@ -13,19 +11,18 @@ const AuthLayout: FC<LayoutType> = (props) => {
         <Fragment>
             <SeoHead {...seo}/>
             <AuthLayoutWrap>
-                <Image
-                    className="auth-background"
-                    width={1920}
-                    height={1200}
-                    src={AUTH_BG}
-                    placeholder="blur"
-                    alt="Auth Background"/>
-                <Link href="/">
-                    <Image
-                        className="logo-image"
-                        src={LOGO}
-                        alt="Logo"/>
-                </Link>
+                <LogoLink
+                    className="logo"
+                    href="/">
+                    <div style={{
+                        color: "#ffffff",
+                        fontSize: 32,
+                        fontWeight: 700,
+                        letterSpacing: 2 }}>
+                        <span style={{ color: "#e32652", fontFamily: "'Big Shoulders Text', cursive" }}>S</span>
+                        <span style={{ letterSpacing: 0, fontFamily: "'Big Shoulders Text', cursive" }}>nT</span>
+                    </div>
+                </LogoLink>
                 {children}
             </AuthLayoutWrap>
         </Fragment>

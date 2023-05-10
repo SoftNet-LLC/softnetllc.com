@@ -8,6 +8,7 @@ const GlobalStyle = () => {
                 padding: 0;
                 margin: 0;
                 box-sizing: border-box;
+                user-select: none;
               }
               
               body {
@@ -23,6 +24,14 @@ const GlobalStyle = () => {
               h1, h2, h3, h4, h5, h6 {
                 font-family: 'Big Shoulders Text', cursive;
                 font-weight: 500;
+              }
+
+              input:-webkit-autofill,
+              input:-webkit-autofill:hover,
+              input:-webkit-autofill:focus,
+              input:-webkit-autofill:active {
+                -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+                -webkit-transition-delay: 9999s;
               }
 
               a {

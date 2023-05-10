@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
 const AuthLayoutWrap = styled.section`
-  background-color: ${({ theme }: any) => `${theme.palette.primary.main}`};
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -19,24 +18,28 @@ const AuthLayoutWrap = styled.section`
     object-fit: cover;
   }
 
-  .logo-image {
+  .logo {
     width: 51px;
     height: auto;
     position: absolute;
     left: 25px;
     top: 25px;
+    z-index: 1;
   }
   
   .auth-card {
     z-index: 1;
-    max-width: 550px;
+    max-width: 540px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #1f1f1f;
+    border-radius: 24px;
     padding: 42px 32px 42px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
 
     h1 {
-      font-size: 28px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #ffffff;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -46,6 +49,7 @@ const AuthLayoutWrap = styled.section`
 
     p {
       text-align: center;
+      color: #cccccc;
     }
     
     button {
@@ -62,6 +66,13 @@ const AuthLayoutWrap = styled.section`
     
     a {
       color: ${({ theme }: any) => `${theme.palette.secondary.main}`};
+    }
+    
+    .MuiDivider-root {
+      color: #aaaaaa;
+      :before, :after {
+        border-color: #444444;
+      }
     }
   }
 `

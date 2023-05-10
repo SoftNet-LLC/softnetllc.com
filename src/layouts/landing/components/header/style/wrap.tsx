@@ -10,6 +10,12 @@ const HeaderWrap = styled.div`
   ${({ theme }: any) => `${theme.breakpoints.down("sm")} {
     padding: 0 0;
   }`}
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
 `;
 
 export default HeaderWrap;

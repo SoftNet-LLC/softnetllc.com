@@ -87,8 +87,33 @@ const theme = createTheme({
         MuiOutlinedInput: {
             defaultProps: {
                 sx: {
-                    borderRadius: 0
+                    borderRadius: "6px",
+                    border: "1px solid #808080",
+                    color: "#e0e0e0"
                 }
+            }
+        },
+        MuiInputAdornment: {
+            styleOverrides: {
+                outlined: {
+                    color: "#e0e0e0"
+                }
+            }
+        },
+        MuiIcon: {
+            defaultProps: {
+                color: "primary"
+            },
+            styleOverrides: {
+                colorPrimary: "#e32652",
+            }
+        },
+        MuiCheckbox: {
+            defaultProps: {
+                color: "primary"
+            },
+            styleOverrides: {
+                colorPrimary: "#e32652"
             }
         }
     },
