@@ -22,6 +22,7 @@ const baseConfig = withTM(withPlugins([
     swcMinify: true,
     images: {
         formats: ["image/avif", "image/webp"],
+        unoptimized: true
     },
     env: {}
 }));
