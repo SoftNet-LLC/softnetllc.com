@@ -15,14 +15,12 @@ const withPwa = require("next-pwa")({
 })
 
 
-const baseConfig = withTM(withPlugins([
-    optimizedImages
-], {
+const baseConfig = withTM(withPwa({
     reactStrictMode: false,
     swcMinify: true,
     images: {
         formats: ["image/avif", "image/webp"],
-        unoptimized: true
+        unoptimized: true,
     },
     env: {}
 }));
