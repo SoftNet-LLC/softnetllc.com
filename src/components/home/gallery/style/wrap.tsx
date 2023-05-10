@@ -15,8 +15,8 @@ const HomeGalleryWrap = styled.section`
   }
   
   .gallery {
-    animation: marquee 30s linear infinite;
-    animation-delay: 1s;
+    animation: marquee 100s linear infinite;
+    animation-delay: 2s;
     display: grid;
     grid-template-columns: repeat(20, 384px);
     gap: 16px;
