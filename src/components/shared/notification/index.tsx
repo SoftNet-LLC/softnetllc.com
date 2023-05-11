@@ -13,14 +13,16 @@ const NotificationMessage: FC = () => {
                     alignItems="center"
                     direction="row">
                     <h2 style={{ margin: 0, paddingTop: 4 }}>
-                        SAVE UP TO <span>35% OFF</span> FOR STARTUP DAYS.
+                        SAVE UP TO <span>50% OFF</span> FOR STARTUP DAYS.
                     </h2>
                     <Button variant="contained">
                         Conversation now
                     </Button>
                 </Stack>
             </Container>
-            <IconButton className="close-button">
+            <IconButton
+                aria-label="Close Button"
+                className="close-button">
                 <CloseOutlined/>
             </IconButton>
         </NotificationWrap>

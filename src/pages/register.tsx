@@ -125,16 +125,9 @@ const LoginPage: NextPage = () => {
                                 }/>
                         </FormControl>
                     </Grid>
-                    <Grid xs={4}>
-                        <P3>
-                            <FormControlLabel
-                                control={<Checkbox/>}
-                                label="Keep login"/>
-                        </P3>
-                    </Grid>
                     <Grid
-                        xs={8}>
-                        <P3 style={{ textAlign: "right" }}>
+                        xs={12}>
+                        <P3 style={{ textAlign: "center" }}>
                             Already have an account?&nbsp;
                             <Link href="/login">
                                 Login
@@ -143,7 +136,7 @@ const LoginPage: NextPage = () => {
                     </Grid>
                     <Grid xs={12}>
                         <ActionButton
-                            color="secondary"
+                            color="primary"
                             variant="contained"
                             fullWidth
                             size="large">

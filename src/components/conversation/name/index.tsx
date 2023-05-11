@@ -13,7 +13,7 @@ const ConversationName: FC = () => {
 
     return (
         <div>
-            <H2>
+            <H2 style={{ color: "#ffffff" }}>
                 What is your Name
                 <BootstrapTooltip
                     title={
@@ -47,11 +47,11 @@ const ConversationName: FC = () => {
                     onClick={()=>{nextEvent("welcome")}}
                     disabled={!cvs?.data?.name}
                     size="large"
-                    color="secondary"
+                    color="primary"
                     variant="contained">
                     Okay
                 </Button>
-                <div>
+                <div style={{ color: "#808080" }}>
                     press <b>Enter</b> ↵
                 </div>
             </Stack>

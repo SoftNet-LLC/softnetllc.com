@@ -9,7 +9,7 @@ const ConversationDescription: FC = () => {
 
     return (
         <div>
-            <H2>
+            <H2 color="light">
                 Tell us about your project
                 <BootstrapTooltip
                     title={
@@ -44,20 +44,20 @@ const ConversationDescription: FC = () => {
                     direction="row"
                     alignItems="center">
                     <Button
-                        disabled
+                        disabled={false}
                         size="large"
-                        color="secondary"
+                        color="primary"
                         variant="contained">
                         Okay
                     </Button>
-                    <div>
+                    <div style={{ color: "#808080" }}>
                         press <b>Enter</b> ↵
                     </div>
                 </Stack>
                 <Button
                     style={{ marginLeft: 32 }}
                     size="large"
-                    color="secondary"
+                    color="primary"
                     variant="text">
                     Skip this
                 </Button>

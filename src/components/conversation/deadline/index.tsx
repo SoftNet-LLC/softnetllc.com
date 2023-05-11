@@ -24,7 +24,7 @@ const ConversationDeadline: FC = () => {
 
     return (
         <div>
-            <H2>
+            <H2 color="light">
                 How soon do you need it completed?
                 <BootstrapTooltip
                     title={
@@ -48,15 +48,15 @@ const ConversationDeadline: FC = () => {
                     name="deadline"
                     value={value}
                     onChange={handleChange}>
-                    <FormControlLabel value="d" control={<Radio />} label="1 week" />
-                    <FormControlLabel value="w" control={<Radio />} label="1 - 2 weeks" />
-                    <FormControlLabel value="m" control={<Radio />} label="1  month" />
-                    <FormControlLabel value="mm" control={<Radio />} label="1 - 2 month" />
-                    <FormControlLabel value="mmm" control={<Radio />} label="2 - 6 months" />
-                    <FormControlLabel value="y" control={<Radio />} label="6 months - 1 year" />
-                    <FormControlLabel value="yy" control={<Radio />} label="1 year+" />
-                    <FormControlLabel value="cu" control={<Radio />} label="custom" />
-                    <FormControlLabel value="no" control={<Radio />} label="I don't know" />
+                    <FormControlLabel style={{ color: "#808080" }} value="d" control={<Radio style={{ color: "#ffffff" }}/>} label="1 week" />
+                    <FormControlLabel style={{ color: "#808080" }} value="w" control={<Radio style={{ color: "#ffffff" }}/>} label="1 - 2 weeks" />
+                    <FormControlLabel style={{ color: "#808080" }} value="m" control={<Radio style={{ color: "#ffffff" }}/>} label="1  month" />
+                    <FormControlLabel style={{ color: "#808080" }} value="mm" control={<Radio style={{ color: "#ffffff" }}/>} label="1 - 2 month" />
+                    <FormControlLabel style={{ color: "#808080" }} value="mmm" control={<Radio style={{ color: "#ffffff" }}/>} label="2 - 6 months" />
+                    <FormControlLabel style={{ color: "#808080" }} value="y" control={<Radio style={{ color: "#ffffff" }}/>} label="6 months - 1 year" />
+                    <FormControlLabel style={{ color: "#808080" }} value="yy" control={<Radio style={{ color: "#ffffff" }}/>} label="1 year+" />
+                    <FormControlLabel style={{ color: "#808080" }} value="cu" control={<Radio style={{ color: "#ffffff" }}/>} label="custom" />
+                    <FormControlLabel style={{ color: "#808080" }} value="no" control={<Radio style={{ color: "#ffffff" }}/>} label="I don't know" />
                 </RadioGroup>
             </FormControl>
             {
@@ -80,13 +80,13 @@ const ConversationDeadline: FC = () => {
                 alignItems="center"
                 style={{ marginTop: 24 }}>
                 <Button
-                    disabled
+                    disabled={false}
                     size="large"
-                    color="secondary"
+                    color="primary"
                     variant="contained">
                     Okay
                 </Button>
-                <div>
+                <div style={{ color: "#808080" }}>
                     press <b>Enter</b> ↵
                 </div>
             </Stack>

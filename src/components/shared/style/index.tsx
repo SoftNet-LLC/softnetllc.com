@@ -37,6 +37,12 @@ const GlobalStyle = () => {
               a {
                 font-weight: 500;
               }
+
+              .MuiButtonBase-root.Mui-disabled:disabled {
+                color: rgb(255 255 255 / 26%);
+                box-shadow: none;
+                background-color: rgb(255 255 255 / 12%);
+              }
             `}
         />
     );

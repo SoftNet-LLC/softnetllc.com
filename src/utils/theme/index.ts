@@ -87,7 +87,7 @@ const theme = createTheme({
         MuiOutlinedInput: {
             defaultProps: {
                 sx: {
-                    borderRadius: "6px",
+                    borderRadius: "12px",
                     border: "1px solid #808080",
                     color: "#e0e0e0"
                 }

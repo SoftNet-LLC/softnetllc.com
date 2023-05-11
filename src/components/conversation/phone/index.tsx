@@ -13,7 +13,7 @@ const ConversationPhone: FC = () => {
 
     return (
         <div>
-            <H2>
+            <H2 color="light">
                 What is your Phone Number
                 <BootstrapTooltip
                     title={
@@ -48,11 +48,11 @@ const ConversationPhone: FC = () => {
                     onClick={()=>{nextEvent("title")}}
                     disabled={!cvs?.data?.phone}
                     size="large"
-                    color="secondary"
+                    color="primary"
                     variant="contained">
                     Okay
                 </Button>
-                <div>
+                <div style={{ color: "#808080" }}>
                     press <b>Enter</b> ↵
                 </div>
             </Stack>

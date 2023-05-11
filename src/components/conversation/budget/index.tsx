@@ -14,7 +14,7 @@ const ConversationBudget: FC = () => {
 
     return (
         <div>
-            <H2>
+            <H2 color="light">
                 What is your budget for this project?
                 <BootstrapTooltip
                     title={
@@ -38,15 +38,15 @@ const ConversationBudget: FC = () => {
                     name="budget"
                     value={value}
                     onChange={handleChange}>
-                    <FormControlLabel value="$" control={<Radio />} label="$500 - $700" />
-                    <FormControlLabel value="$$" control={<Radio />} label="$800 - $1,500" />
-                    <FormControlLabel value="$$$" control={<Radio />} label="$1,600 - $5,000" />
-                    <FormControlLabel value="$$$$" control={<Radio />} label="$5,000 - $10,000" />
-                    <FormControlLabel value="$$$$$" control={<Radio />} label="$10,000 - $30,000" />
-                    <FormControlLabel value="$$$$$$" control={<Radio />} label="$30,000 - $60,000" />
-                    <FormControlLabel value="$$$$$$$" control={<Radio />} label="$60,000 - $120,000" />
-                    <FormControlLabel value="$$$$$$$$" control={<Radio />} label="$120,000+" />
-                    <FormControlLabel value="no" control={<Radio />} label="I don't know yet" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$" control={<Radio style={{ color: "#ffffff" }}/>} label="$500 - $700" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$$" control={<Radio style={{ color: "#ffffff" }}/>} label="$800 - $1,500" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$$$" control={<Radio style={{ color: "#ffffff" }}/>} label="$1,600 - $5,000" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$$$$" control={<Radio style={{ color: "#ffffff" }}/>} label="$5,000 - $10,000" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$$$$$" control={<Radio style={{ color: "#ffffff" }}/>} label="$10,000 - $30,000" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$$$$$$" control={<Radio style={{ color: "#ffffff" }}/>} label="$30,000 - $60,000" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$$$$$$$" control={<Radio style={{ color: "#ffffff" }}/>} label="$60,000 - $120,000" />
+                    <FormControlLabel style={{ color: "#808080" }} value="$$$$$$$$" control={<Radio style={{ color: "#ffffff" }}/>} label="$120,000+" />
+                    <FormControlLabel style={{ color: "#808080" }} value="no" control={<Radio style={{ color: "#ffffff" }}/>} label="I don't know yet" />
                 </RadioGroup>
             </FormControl>
             <Stack
@@ -55,13 +55,13 @@ const ConversationBudget: FC = () => {
                 alignItems="center"
                 style={{ marginTop: 24 }}>
                 <Button
-                    disabled
+                    disabled={false}
                     size="large"
-                    color="secondary"
+                    color="primary"
                     variant="contained">
                     Okay
                 </Button>
-                <div>
+                <div style={{ color: "#808080" }}>
                     press <b>Enter</b> ↵
                 </div>
             </Stack>

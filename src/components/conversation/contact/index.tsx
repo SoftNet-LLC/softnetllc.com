@@ -22,7 +22,7 @@ const ConversationContacts: FC = () => {
 
     return (
         <div>
-            <H2>
+            <H2 color="light">
                 Would you like to add more contacts?
                 <BootstrapTooltip
                     title={

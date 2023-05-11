@@ -11,61 +11,61 @@ const ConversationWrap = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .talk {
-    color: #333;
+    color: #b2b2b2;
     line-height: 2.5;
+
     b {
-      color: #000;
+      color: #ffffff;
     }
   }
-  
 
-  .logo-image {
-    width: 51px;
-    height: auto;
+  .conversation-header {
     position: absolute;
-    left: 25px;
-    top: 25px;
+    top: 20px;
+    width: 100%;
   }
-  
+
   .progress-bar {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
   }
-  
-  .action-area{
+
+  .action-area {
     position: absolute;
     bottom: 24px;
     left: 0;
     width: 100%;
     text-align: center;
-    
+
     button {
       svg {
         width: 16px;
         height: 16px;
       }
     }
+
     p {
       margin-top: 24px;
     }
   }
-  
-  .widget-content{
+
+  .widget-content {
     display: flex;
     height: 100%;
     flex-direction: column;
     max-width: 800px;
     width: 100%;
-    
+
     h2 {
       font-size: 24px;
       display: flex;
       align-items: center;
       grid-gap: 8px;
+
       svg {
         color: #444444;
       }
@@ -73,9 +73,6 @@ const ConversationWrap = styled.section`
   }
 
   h1 {
-    position: absolute;
-    left: 100px;
-    top: 32px;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1;

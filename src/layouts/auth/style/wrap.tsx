@@ -5,11 +5,14 @@ const AuthLayoutWrap = styled.section`
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 102px 20px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+  
+  .logo-header {
+    height: 70px;
+    background-color: black;
+    margin-bottom: 32px;
+  }
   
   .auth-background{
     width: 100%;
@@ -22,26 +25,26 @@ const AuthLayoutWrap = styled.section`
     width: 51px;
     height: auto;
     position: absolute;
-    left: 25px;
-    top: 25px;
     z-index: 1;
   }
   
   .auth-card {
     z-index: 1;
-    max-width: 540px;
+    max-width: 700px;
     width: 100%;
-    background-color: #1f1f1f;
-    border-radius: 24px;
-    padding: 42px 32px 42px;
+    height: calc(100vh - 112px);
+    background-color: #000000;
+    padding: 72px 155px 102px;
     box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
 
     h1 {
       font-size: 32px;
       font-weight: bold;
       color: #ffffff;
       text-align: center;
-      text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 1;
       margin-bottom: 8px;
@@ -74,6 +77,10 @@ const AuthLayoutWrap = styled.section`
         border-color: #444444;
       }
     }
+  }
+  
+  .MuiTypography-root {
+    white-space: nowrap;
   }
 `
 

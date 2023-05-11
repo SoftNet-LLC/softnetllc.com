@@ -2,7 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import AuthLayout from "@layouts/auth";
 import { H1 } from "@components/shared/heading";
-import { P2, P3 } from "@components/shared/paragraph";
+import { P1, P2, P3 } from "@components/shared/paragraph";
 import {
     Button,
     Checkbox, Divider,
@@ -15,7 +15,7 @@ import {
 } from "@mui/material";
 import Label from "@components/shared/input/label";
 import { ActionButton } from "@components/shared/button";
-import { FacebookOutlined, Google, Visibility, VisibilityOff } from "@mui/icons-material";
+import { FacebookOutlined, GitHub, Google, Visibility, VisibilityOff } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
 import Link from "next/link";
 import { SeoProps } from "@utils/types/layout.type";
@@ -58,16 +58,53 @@ const LoginPage: NextPage = () => {
     return (
         <AuthLayout seo={pageSeo}>
             <div className="auth-card">
-                <H1>Login</H1>
-
+                <H1>LOG IN to <span>Soft</span>net Tech</H1>
                 <P2 style={{ marginBottom: 16 }}>
-                    Sign into your management portal
+                    Sign into your project management portal
                 </P2>
 
                 <Grid
                     alignItems="center"
                     spacing={2}
                     container>
+                    <Grid xs={12}>
+                        <Button
+                            style={{
+                                height: 50,
+                                borderRadius: "30px"
+                            }}
+                            color="secondary"
+                            variant="outlined"
+                            fullWidth
+                            size="large">
+                            <Google/>
+                            Google
+                        </Button>
+                    </Grid>
+                    <Grid xs={12}>
+                        <Button
+                            style={{
+                                height: 50,
+                                borderRadius: "30px"
+                            }}
+                            color="secondary"
+                            variant="outlined"
+                            fullWidth
+                            size="large">
+                            <GitHub/>
+                            Github
+                        </Button>
+                    </Grid>
+
+                    <Grid
+                        xs={12}>
+                        <Divider
+                            style={{
+                                borderColor: "#404040",
+                                margin: "24px 0 12px"
+                            }}/>
+                    </Grid>
+
                     <Grid xs={12}>
                         <div>
                             <Label
@@ -113,24 +150,22 @@ const LoginPage: NextPage = () => {
                                 }/>
                         </FormControl>
                     </Grid>
-                    <Grid xs={4}>
-                        <P3>
+                    <Grid xs={12}>
+                        <P3 style={{ textAlign: "left" }}>
                             <FormControlLabel
-                                control={<Checkbox style={{ color: "#e0e0e0" }} color="primary"/>}
+                                control={
+                                    <Checkbox
+                                        defaultChecked
+                                        style={{ color: "#e0e0e0" }}
+                                        color="primary"/>
+                                }
                                 label="Keep login"/>
                         </P3>
                     </Grid>
-                    <Grid
-                        xs={8}>
-                        <P3 style={{ textAlign: "right" }}>
-                            Don't you have account?&nbsp;
-                            <Link href="/register">
-                                Register
-                            </Link>
-                        </P3>
-                    </Grid>
+
                     <Grid xs={12}>
                         <ActionButton
+                            style={{ borderRadius: 30 }}
                             color="primary"
                             variant="contained"
                             fullWidth
@@ -138,30 +173,33 @@ const LoginPage: NextPage = () => {
                             Login
                         </ActionButton>
                     </Grid>
-                    <Grid xs={12}>
-                        <Divider style={{ color: "#aaaaaa", borderColor: "#aaaaaa" }}>
-                            Or
-                        </Divider>
+
+                    <Grid
+                        xs={12}>
+                        <P2 style={{ textAlign: "center" }}>
+                            <Link href="/register">
+                                Forgot Password?
+                            </Link>
+                        </P2>
                     </Grid>
-                    <Grid xs={6}>
-                        <Button
-                            color="primary"
-                            variant="outlined"
-                            fullWidth
-                            size="large">
-                            <Google/>
-                            Google
-                        </Button>
+
+                    <Grid
+                        xs={12}>
+                        <Divider
+                            style={{
+                                borderColor: "#404040",
+                                margin: "12px 0"
+                            }}/>
                     </Grid>
-                    <Grid xs={6}>
-                        <Button
-                            color="primary"
-                            variant="outlined"
-                            fullWidth
-                            size="large">
-                            <FacebookOutlined/>
-                            Facebook
-                        </Button>
+
+                    <Grid
+                        xs={12}>
+                        <P2 style={{ textAlign: "center" }}>
+                            Don't have account?&nbsp;
+                            <Link href="/register">
+                                Register
+                            </Link>
+                        </P2>
                     </Grid>
                 </Grid>
             </div>

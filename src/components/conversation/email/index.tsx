@@ -13,7 +13,7 @@ const ConversationEmail: FC = () => {
 
     return (
         <div>
-            <H2>
+            <H2 color="light">
                 What is your Email
                 <BootstrapTooltip
                     title={
@@ -48,11 +48,11 @@ const ConversationEmail: FC = () => {
                     onClick={()=>{nextEvent("phone")}}
                     disabled={!cvs?.data?.email}
                     size="large"
-                    color="secondary"
+                    color="primary"
                     variant="contained">
                     Okay
                 </Button>
-                <div>
+                <div style={{ color: "#808080" }}>
                     press <b>Enter</b> ↵
                 </div>
             </Stack>

@@ -29,11 +29,11 @@ const ConversationWelcome: FC = () => {
                 <Button
                     onClick={()=>{nextEvent("email")}}
                     size="large"
-                    color="secondary"
+                    color="primary"
                     variant="contained">
                     Let's go
                 </Button>
-                <div>
+                <div style={{ color: "#808080" }}>
                     press <b>Enter</b> ↵
                 </div>
             </Stack>
