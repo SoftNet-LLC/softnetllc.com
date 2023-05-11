@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NextPage } from "next";
 import LandingLayout from "@layouts/landing";
 import { SeoProps } from "@utils/types/layout.type";
 import HomeHero from "@components/home/hero";
 import HomeGallery from "@components/home/gallery";
 import HomeChallenge from "@components/home/challenge";
+import { logEvent } from "@firebase/analytics";
+import { analytics } from "../api/firebase";
 
 const pageSeo: SeoProps = {
     title: "Web & Mobile App Development Services | SoftNet.LLC",
@@ -31,6 +33,14 @@ const pageSeo: SeoProps = {
 }
 
 const HomePage: NextPage = () => {
+
+    useEffect(() =>{
+        logEvent(analytics, "screen_view", {
+            firebase_screen: "Home Page",
+            firebase_screen_class: "Landing"
+        });
+    }, [])
+
     return (
         <LandingLayout seo={pageSeo}>
             <HomeHero/>
