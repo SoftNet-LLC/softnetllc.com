@@ -7,7 +7,6 @@ import { P1 } from "@components/shared/paragraph";
 import { H1 } from "@components/shared/heading";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Container } from "@mui/material";
-import { HOME_HERO } from "@assets/images";
 
 const Points = () => {
     const imageTex = useLoader(TextureLoader, "/circle.png")
