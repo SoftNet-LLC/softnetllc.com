@@ -10,6 +10,7 @@ import {
     FaxOutlined,
     PhoneInTalkOutlined
 } from "@mui/icons-material";
+import { BaseMap } from "@components/shared/map";
 
 
 const ContactHero: FC = () => {
@@ -21,13 +22,13 @@ const ContactHero: FC = () => {
     return (
         <ContactHeroWrap>
             <div className="map-area">
-
+                <BaseMap/>
             </div>
             <div className="contact-info">
                 <Container>
                     <Grid
                         justifyContent="center"
-                        spacing={4}
+                        spacing={3}
                         container>
                         <Grid>
                             <div className="contact-info-card">
@@ -55,17 +56,6 @@ const ContactHero: FC = () => {
                                     <Link href="mailto:nicholijin@gmail.com">
                                         <ArrowRightOutlined/>
                                         +86 (186) 4066-4692
-                                    </Link>
-                                </p>
-                            </div>
-                        </Grid>
-                        <Grid>
-                            <div className="contact-info-card">
-                                <h2><FaxOutlined/>Fax</h2>
-                                <p>
-                                    <Link href="mailto:nicholijin@gmail.com">
-                                        <ArrowRightOutlined/>
-                                        +1 (253) 533-2244
                                     </Link>
                                 </p>
                             </div>

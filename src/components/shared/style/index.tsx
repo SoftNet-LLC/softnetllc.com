@@ -4,13 +4,33 @@ const GlobalStyle = () => {
     return (
         <Global
             styles={css`
+              ::-webkit-scrollbar {
+                width: 5px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                background: #3f3f3f;
+              }
+
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: #aaaaaa;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: #e32652;
+              }
+              
+              
               * {
                 padding: 0;
                 margin: 0;
                 box-sizing: border-box;
                 user-select: none;
               }
-              
+
               body {
                 background: #000;
                 font-family: 'IBM Plex Mono', monospace;
@@ -20,7 +40,7 @@ const GlobalStyle = () => {
                 max-width: 100%;
                 height: auto;
               }
-              
+
               h1, h2, h3, h4, h5, h6 {
                 font-family: 'Big Shoulders Text', cursive;
                 font-weight: 500;
@@ -42,6 +62,12 @@ const GlobalStyle = () => {
                 color: rgb(255 255 255 / 26%);
                 box-shadow: none;
                 background-color: rgb(255 255 255 / 12%);
+              }
+
+              .MuiInputBase-root {
+                .MuiSvgIcon-root {
+                  color: #808080;
+                }
               }
             `}
         />

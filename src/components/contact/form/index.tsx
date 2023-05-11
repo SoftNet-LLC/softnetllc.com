@@ -28,10 +28,11 @@ const ContactForm: FC = () => {
                             <P3>Have questions? Need to get in touch?</P3>
                             <Grid
                                 container
-                                spacing={5}>
+                                spacing={3}>
                                 <Grid xs={12}>
                                     <Label htmlFor="label">Your Name*</Label>
                                     <TextField
+                                        placeholder="Enter your name"
                                         fullWidth
                                         id="name"
                                         name="name" />
@@ -39,6 +40,7 @@ const ContactForm: FC = () => {
                                 <Grid xs={12}>
                                     <Label htmlFor="email">Your Email*</Label>
                                     <TextField
+                                        placeholder="Enter your email"
                                         id="email"
                                         name="email"
                                         fullWidth/>
@@ -47,11 +49,12 @@ const ContactForm: FC = () => {
                                     <Label htmlFor="subject">Your Subject*</Label>
                                     <FormControl fullWidth>
                                         <Select
+                                            placeholder="Select subject"
                                             id="subject"
                                             name="subject">
-                                            <MenuItem value={"general"}>General Inquiry/question</MenuItem>
-                                            <MenuItem value={"start"}>I want an estimate for my project/idea</MenuItem>
-                                            <MenuItem value={"start"}>I need support for a completed project</MenuItem>
+                                            <MenuItem value="general">General Inquiry/question</MenuItem>
+                                            <MenuItem value="start">I want an estimate for my project/idea</MenuItem>
+                                            <MenuItem value="start">I need support for a completed project</MenuItem>
                                         </Select>
                                     </FormControl>
                                 </Grid>
@@ -66,10 +69,9 @@ const ContactForm: FC = () => {
                                         maxRows={4}
                                     />
                                 </Grid>
-                                <Grid>
+                                <Grid xs={12}>
                                     <ActionButton
-                                        color="info"
-                                        fullWidth={false}
+                                        color="primary"
                                         variant="contained">
                                         Submit
                                     </ActionButton>

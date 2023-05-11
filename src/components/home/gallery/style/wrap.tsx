@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const HomeGalleryWrap = styled.section`
-  padding: 52px 0;
+  padding: 24px 0;
   overflow: hidden;
   
   img {

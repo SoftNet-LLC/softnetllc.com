@@ -42,6 +42,9 @@ const IconTab: FC<TabsType> = (props) => {
             {
                 tabs.map((t, i) => (
                     <Tab
+                        style={{
+                            color: "#ffffff"
+                        }}
                         key={`service-tab-${t.value}`}
                         icon={t.icon}
                         iconPosition="start"
@@ -56,7 +59,20 @@ const IconTab: FC<TabsType> = (props) => {
 
 
 const CustomTabs = styled(Tabs)`
-  border-bottom: 1px solid #aaa;
+  align-items: center;
+  justify-content: space-between;
+  
+  .MuiTabs-flexContainer {
+    justify-content: space-between;
+  }
+
+  .MuiTabs-indicator {
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  
   button {
     min-height: 48px;
     line-height: 1;
