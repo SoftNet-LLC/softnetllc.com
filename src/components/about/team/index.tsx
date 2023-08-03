@@ -5,6 +5,8 @@ import { P1, P2 } from "@components/shared/paragraph";
 import Grid from "@mui/material/Unstable_Grid2";
 import { ActionButton } from "@components/shared/button";
 import { Container } from "@mui/material";
+import Np from "@assets/images/member/np.jpg"
+import Image from "next/image";
 
 const AboutTeam: FC = () => {
     return (
@@ -17,8 +19,8 @@ const AboutTeam: FC = () => {
                     <Grid
                         lg={8}
                         xs={12}>
-                        <H2>Who we are?</H2>
-                        <P2>
+                        <H2 color="light">Who we are?</H2>
+                        <P2 color="light">
                             The team at Softnet Technology is comprised of some of the best developers around the globe.<br/>
                             Each developer is tested for talent & abilty across a number of skillsets including:<br/> technical ability,
                             attention to detail, team spirit, and customer service.<br/><br/>
@@ -34,7 +36,12 @@ const AboutTeam: FC = () => {
                                 members.map((i, index) => (
                                     <Grid key={index}>
                                         <div className="member-card">
-                                            <img src={i.photo} alt={i.name}/>
+                                            <Image
+                                                style={{ objectFit: "cover" }}
+                                                width={100}
+                                                height={100}
+                                                src={i.photo}
+                                                alt={i.name}/>
                                             <div className="name-area">
                                                 <p>{i.name}</p>
                                                 <p className="job">{i.job}</p>
@@ -67,7 +74,7 @@ const members = [
         name: "Nicholi Peck",
         job: "CEO, Founder",
         website: "https://nicholijin.com/",
-        photo: "https://media.istockphoto.com/id/1197071216/photo/portrait-of-a-smart-and-handsome-it-specialist-wearing-glasses-smiles-behind-him-personal.jpg?s=612x612&w=0&k=20&c=Dy8TjvDmeXWhR6gAZ_OuqLu3ytUJmtycEYdVQenpWoI="
+        photo: Np
     },
     {
         name: "Liam Pole",
@@ -79,55 +86,15 @@ const members = [
         name: "Nicholi Jin",
         job: "CTO, Founder",
         website: "https://nicholijin.com/",
-        photo: "https://media.licdn.com/dms/image/C5603AQEZFyIy7f4zeA/profile-displayphoto-shrink_800_800/0/1650987155046?e=2147483647&v=beta&t=RUDQynswyzSrpkyuu38XqGduOGXMsjmV8ucP1xq2EtM"
+        photo: "https://nicholijin.com/_next/static/media/me.c96f8d0c.jpg"
     },
     {
-        name: "Poul Smith",
-        job: "Frontend D",
+        name: "Zhang Zhun",
+        job: "Developer",
         website: "https://nicholijin.com/",
         photo: "https://i.pinimg.com/564x/53/d9/a8/53d9a8d9ed9d72bdf7b8acf03225b7ad.jpg"
     },
-    {
-        name: "Klark Laue",
-        job: "Backend D",
-        website: "https://nicholijin.com/",
-        photo: "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFuJTIwZmFjZXxlbnwwfHwwfHw%3D&w=1000&q=80"
-    },
-    {
-        name: "Temuis Lisao",
-        job: "UI Designer",
-        website: "https://nicholijin.com/",
-        photo: "https://www.techrepublic.com/wp-content/uploads/2021/03/ehu-pgoldman-square-385.jpg"
-    },
-    {
-        name: "Woriq Diwoa M",
-        job: "Netsuite D",
-        website: "https://nicholijin.com/",
-        photo: "https://devblogs.microsoft.com/cse/wp-content/uploads/sites/55/2022/06/preethi-square.jpg"
-    },
-    {
-        name: "Catalyte Worgre",
-        job: "Sales Manager",
-        website: "https://nicholijin.com/",
-        photo: "https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk1NDE0NDMxMDA0MzY5OTQz/gettyimages-1244259778.jpg"
-    },  {
-        name: "Catalyte Worgre",
-        job: "Sales Manager",
-        website: "https://nicholijin.com/",
-        photo: "https://www.catalyte.io/wp-content/uploads/2022/05/Nicole-developer.jpg"
-    },
-    {
-        name: "Catalyte Worgre",
-        job: "Sales Manager",
-        website: "https://nicholijin.com/",
-        photo: "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-    },
-    {
-        name: "Catalyte Worgre",
-        job: "Sales Manager",
-        website: "https://nicholijin.com/",
-        photo: "https://media.licdn.com/dms/image/C5603AQFm64VMmidf_Q/profile-displayphoto-shrink_800_800/0/1642434484137?e=2147483647&v=beta&t=6zGVY6he6Ivf6Yq6prAyiCRkX8OBodFyC2Nc7i8cQtQ"
-    }
+
 ]
 
 export default AboutTeam;

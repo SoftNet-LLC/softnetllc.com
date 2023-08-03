@@ -89,7 +89,7 @@ const ServicesLayout: FC<Props> = (props) => {
         //     button: "Start Conversation",
         //     link: "/services/web",
         //     color: "#00ab00",
-        //     image: "/temp/scrapping.webp"
+        //     member: "/temp/scrapping.webp"
         // },
         {
             value: "data",
@@ -111,7 +111,7 @@ const ServicesLayout: FC<Props> = (props) => {
         //     button: "Start Conversation",
         //     link: "/services/blockchain",
         //     color: "#F7931A",
-        //     image: "/temp/coin.png"
+        //     member: "/temp/coin.png"
         // }
     ]
 
